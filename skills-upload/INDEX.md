@@ -1,107 +1,93 @@
-﻿# Skills for Claude Desktop upload
+﻿# Skills for Claude Desktop upload (top-level)
 
-Total: 101 skills. Each `.zip` in this folder contains that skill's `SKILL.md` (plus any support files) at the archive root, ready to upload one at a time in Claude Desktop -> Settings -> Capabilities -> Skills.
+Total top-level: 87 skills. One `.zip` per skill, SKILL.md at root. Bundle skills are under `bundles/` (see bundles/BUNDLES-INDEX.md).
 
-| # | Skill | Source | Description |
-|---|-------|--------|-------------|
-| 1 | `banner-design.zip` | .opencode/skills | Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with AI-generated visuals. Actions: design, ... |
-| 2 | `brainstorming.zip` | .opencode/skills | You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requi... |
-| 3 | `brand.zip` | .opencode/skills | Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand... |
-| 4 | `brandkit.zip` | .opencode/skills | Premium brand-kit image generation skill for creating high-end brand-guidelines boards, logo systems, identity decks, and visual-world presentations. Trained... |
-| 5 | `brutalist-skill.zip` | .opencode/skills | \| |
-| 6 | `caveman.zip` | .opencode/skills | > |
-| 7 | `caveman-commit.zip` | .opencode/skills | > |
-| 8 | `caveman-compress.zip` | .opencode/skills | > |
-| 9 | `caveman-help.zip` | .opencode/skills | > |
-| 10 | `caveman-review.zip` | .opencode/skills | > |
-| 11 | `caveman-stats.zip` | .opencode/skills | > |
-| 12 | `clarity.zip` | .opencode/skills | Draft, rewrite, or review reader-facing prose so it is specific, useful, and recognizably the author's without inventing facts or performing humanness. Use f... |
-| 13 | `dashboard-designer-skill.zip` | .opencode/skills | Use this skill when designing a data dashboardâ€”choosing KPIs, structuring layout, applying visual hierarchy, or deciding which BI tool to use. Trigger phra... |
-| 14 | `design.zip` | .opencode/skills | Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini AI), corporate identity program (50 deliverables, C... |
-| 15 | `design-system.zip` | .opencode/skills | Token architecture, component specifications, and slide generation. Three-layer tokens (primitiveâ†’semanticâ†’component), CSS variables, spacing/typography ... |
-| 16 | `design-taste-frontend.zip` | .opencode/skills | Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces tha... |
-| 17 | `design-taste-frontend-v1.zip` | .opencode/skills | The original v1 taste-skill, preserved for projects depending on its exact behavior. The current default is `design-taste-frontend` (v2 experimental), which ... |
-| 18 | `emilkowalski-motion.zip` | .opencode/skills | \| |
-| 19 | `frontend-design.zip` | .opencode/skills | \| |
-| 20 | `frontend-dev.zip` | .opencode/skills | \| |
-| 21 | `game-developer.zip` | .opencode/skills | Use when building game systems, implementing Unity/Unreal Engine features, or optimizing game performance. Invoke to implement ECS architecture, configure ph... |
-| 22 | `game-development.zip` | .opencode/skills | Game development orchestrator. Routes to platform-specific skills based on project needs. |
-| 23 | `game-development-2d-games.zip` | .opencode/skills | 2D game development principles. Sprites, tilemaps, physics, camera. |
-| 24 | `game-development-3d-games.zip` | .opencode/skills | 3D game development principles. Rendering, shaders, physics, cameras. |
-| 25 | `game-development-game-art.zip` | .opencode/skills | Game art principles. Visual style selection, asset pipeline, animation workflow. |
-| 26 | `game-development-game-audio.zip` | .opencode/skills | Game audio principles. Sound design, music integration, adaptive audio systems. |
-| 27 | `game-development-game-design.zip` | .opencode/skills | Game design principles. GDD structure, balancing, player psychology, progression. |
-| 28 | `game-development-mobile-games.zip` | .opencode/skills | Mobile game development principles. Touch input, battery, performance, app stores. |
-| 29 | `game-development-multiplayer.zip` | .opencode/skills | Multiplayer game development principles. Architecture, networking, synchronization. |
-| 30 | `game-development-pc-games.zip` | .opencode/skills | PC and console game development principles. Engine selection, platform features, optimization strategies. |
-| 31 | `game-development-vr-ar.zip` | .opencode/skills | VR/AR development principles. Comfort, interaction, performance requirements. |
-| 32 | `game-development-web-games.zip` | .opencode/skills | Web browser game development principles. Framework selection, WebGPU, optimization, PWA. |
-| 33 | `godot-4-migration.zip` | .opencode/skills | Specialized guide for migrating Godot 3.x projects to Godot 4 (GDScript 2.0), covering syntax changes, Tweens, and exports. |
-| 34 | `godot-clear-children.zip` | .opencode/skills | Godotæ­£ç¡®æ¸…é™¤å­èŠ‚ç‚¹çš„æ–¹æ³•ã€‚å½“ç”¨æˆ·éœ€è¦äº†è§£å¦‚ä½•æ­£ç¡®æ¸…é™¤å­èŠ‚ç‚¹æ—¶ä½¿ç”¨ã€‚ |
-| 35 | `godot-console.zip` | .opencode/skills | æä¾›Godotå¼•æ“ŽæŽ§åˆ¶å°å‘½ä»¤è¡Œå·¥å…·çš„è°ƒç”¨èƒ½åŠ›ï¼Œæ”¯æŒè¿è¡ŒGodotå‘½ä»¤ã€æ‰§è¡Œè„šæœ¬ã€å¯¼å‡ºé¡¹ç›®ç­‰æ“ä½œï¼Œé€‚ç”¨äºŽæ¸¸æˆå¼€å‘å’Œè‡ªåŠ¨åŒ–... |
-| 36 | `godot-gdscript-grammar.zip` | .opencode/skills | Godot GDScriptè¯­æ³•è¯¦è§£ã€‚å½“ç”¨æˆ·éœ€è¦GDScriptè¯­æ³•ç›¸å…³ä¿¡æ¯æ—¶ä½¿ç”¨ã€‚ |
-| 37 | `godot-gdscript-patterns.zip` | .opencode/skills | Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimization. Use when building Godot games, implementing game systems, or le... |
-| 38 | `godot-global-variables.zip` | .opencode/skills | Godotå…¨å±€å˜é‡ä½¿ç”¨æŒ‡å—ã€‚å½“ç”¨æˆ·éœ€è¦å…¨å±€å˜é‡å’ŒAutoloadç›¸å…³ä¿¡æ¯æ—¶ä½¿ç”¨ã€‚ |
-| 39 | `godot-knowledge.zip` | .opencode/skills | æä¾› Godot GDScript ç¼–ç¨‹è¯­è¨€å’Œ TSCN åœºæ™¯æ–‡ä»¶æ ¼å¼çš„å®Œæ•´çŸ¥è¯†åº“ï¼Œé€‚ç”¨äºŽæ¸¸æˆå¼€å‘ã€UI è®¾è®¡å’Œåœºæ™¯æž„å»ºã€‚ |
-| 40 | `godot-packedscene.zip` | .opencode/skills | Godot PackedSceneä½¿ç”¨æŒ‡å—ã€‚å½“ç”¨æˆ·éœ€è¦åœºæ™¯åŠ è½½å’Œæ± åŒ–ç›¸å…³ä¿¡æ¯æ—¶ä½¿ç”¨ã€‚ |
-| 41 | `godot-scene.zip` | .opencode/skills | Godot UIä¸Žåœºæ™¯å¼€å‘æŒ‡å—ã€‚å½“ç”¨æˆ·éœ€è¦UIå’Œåœºæ™¯å¼€å‘ç›¸å…³ä¿¡æ¯æ—¶ä½¿ç”¨ã€‚ |
-| 42 | `godot-serialization-pattern.zip` | .opencode/skills | Godotåºåˆ—åŒ–æ¨¡å¼æŒ‡å—ã€‚å½“ç”¨æˆ·éœ€è¦æ•°æ®åºåˆ—åŒ–å’Œååºåˆ—åŒ–ç›¸å…³ä¿¡æ¯æ—¶ä½¿ç”¨ã€‚ |
-| 43 | `godot-singleton-pattern.zip` | .opencode/skills | Godotå•ä¾‹æ¨¡å¼æŒ‡å—ã€‚å½“ç”¨æˆ·éœ€è¦å•ä¾‹æ¨¡å¼å®žçŽ°ç›¸å…³ä¿¡æ¯æ—¶ä½¿ç”¨ã€‚ |
-| 44 | `godot-tscn-format.zip` | .opencode/skills | Godot TSCNæ–‡ä»¶æ ¼å¼è¯¦è§£ã€‚å½“ç”¨æˆ·éœ€è¦TSCNæ–‡ä»¶æ ¼å¼ç›¸å…³ä¿¡æ¯æ—¶ä½¿ç”¨ã€‚ |
-| 45 | `godot-unix-timestamp-fix.zip` | .opencode/skills | Godot Unixæ—¶é—´æˆ³é”™è¯¯ä¿®å¤ã€‚å½“ç”¨æˆ·é‡åˆ°Unixæ—¶é—´æˆ³ç›¸å…³é—®é¢˜æ—¶ä½¿ç”¨ã€‚ |
-| 46 | `gpt-taste.zip` | .opencode/skills | Elite UX/UI & Advanced GSAP Motion Engineer. Enforces Python-driven true randomization for layout variance, strict AIDA page structure, wide editorial typogr... |
-| 47 | `gpt-tasteskill.zip` | .opencode/skills | \| |
-| 48 | `graphify-setup.zip` | .opencode/skills | One-command onboarding of a vibe-coding project onto graphify. Builds the project knowledge graph, wires opencode AND Claude Code to consult the graph before... |
-| 49 | `gsap-core.zip` | .opencode/skills | Official GSAP skill for the core API â€” gsap.to(), from(), fromTo(), easing, duration, stagger, defaults, gsap.matchMedia() (responsive, prefers-reduced-mot... |
-| 50 | `imagegen-frontend-mobile.zip` | .opencode/skills | Elite mobile app image-generation skill for creating premium, app-native screen concepts and flows. Designed for iOS, Android, and cross-platform mobile prod... |
-| 51 | `imagegen-frontend-web.zip` | .opencode/skills | Elite frontend image-direction skill for generating premium, conversion-aware website design references. CRITICAL OUTPUT RULE â€” generate ONE separate horiz... |
-| 52 | `image-to-code.zip` | .opencode/skills | Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then i... |
-| 53 | `image-to-code-skill.zip` | .opencode/skills | \| |
-| 54 | `impeccable-design-polish.zip` | .opencode/skills | \| |
-| 55 | `industrial-brutalist-ui.zip` | .opencode/skills | Raw mechanical interfaces fusing Swiss typographic print with military terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, anal... |
-| 56 | `minimalist-skill.zip` | .opencode/skills | \| |
-| 57 | `minimalist-ui.zip` | .opencode/skills | Clean editorial-style interfaces. Warm monochrome palette, typographic contrast, flat bento grids, muted pastels. No gradients, no heavy shadows. |
-| 58 | `output-skill.zip` | .opencode/skills | Overrides default LLM truncation behavior. Enforces complete code generation, bans placeholder patterns, and handles token-limit splits cleanly. Apply to any... |
-| 59 | `ponytail.zip` | .opencode/skills | > |
-| 60 | `ponytail-audit.zip` | .opencode/skills | > |
-| 61 | `ponytail-debt.zip` | .opencode/skills | > |
-| 62 | `ponytail-gain.zip` | .opencode/skills | > |
-| 63 | `ponytail-help.zip` | .opencode/skills | > |
-| 64 | `ponytail-review.zip` | .opencode/skills | > |
-| 65 | `prd-generator.zip` | .opencode/skills | Generate comprehensive Product Requirements Documents (PRDs) for product managers. Use this skill when users ask to "create a PRD", "write product requiremen... |
-| 66 | `radix-ui.zip` | .opencode/skills |  |
-| 67 | `redesign-existing-projects.zip` | .opencode/skills | Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standards without ... |
-| 68 | `redesign-skill.zip` | .opencode/skills | \| |
-| 69 | `slides.zip` | .opencode/skills | Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies. |
-| 70 | `soft-skill.zip` | .opencode/skills | Teaches the AI to design like a high-end agency. Defines the exact fonts, spacing, shadows, card structures, and animations that make a website feel expensiv... |
-| 71 | `stitch-design-taste.zip` | .opencode/skills | Semantic Design System Skill for Google Stitch. Generates agent-friendly DESIGN.md files that enforce premium, anti-generic UI standards â€” strict typograph... |
-| 72 | `stitch-skill.zip` | .opencode/skills | \| |
-| 73 | `superpowers-brainstorming.zip` | .opencode/skills | You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requi... |
-| 74 | `superpowers-debugging.zip` | .opencode/skills | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes |
-| 75 | `superpowers-executing-plans.zip` | .opencode/skills | Use when you have a written implementation plan to execute in a separate session with review checkpoints |
-| 76 | `superpowers-finish-branch.zip` | .opencode/skills | Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting s... |
-| 77 | `superpowers-git-worktrees.zip` | .opencode/skills | Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists vi... |
-| 78 | `superpowers-guide.zip` | .opencode/skills | Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions |
-| 79 | `superpowers-parallel.zip` | .opencode/skills | Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies |
-| 80 | `superpowers-plans.zip` | .opencode/skills | Use when you have a spec or requirements for a multi-step task, before touching code |
-| 81 | `superpowers-receive-review.zip` | .opencode/skills | Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technic... |
-| 82 | `superpowers-request-review.zip` | .opencode/skills | Use when completing tasks, implementing major features, or before merging to verify work meets requirements |
-| 83 | `superpowers-skills.zip` | .opencode/skills | Use when creating new skills, editing existing skills, or verifying skills work before deployment |
-| 84 | `superpowers-subagent.zip` | .opencode/skills | Use when executing implementation plans with independent tasks in the current session |
-| 85 | `superpowers-tdd.zip` | .opencode/skills | Use when implementing any feature or bugfix, before writing implementation code |
-| 86 | `superpowers-verification.zip` | .opencode/skills | Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output... |
-| 87 | `systematic-debugging.zip` | .opencode/skills | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes |
-| 88 | `taste-skill.zip` | .opencode/skills | \| |
-| 89 | `taste-skill-v1.zip` | .opencode/skills | \| |
-| 90 | `test-driven-development.zip` | .opencode/skills | Use when implementing any feature or bugfix, before writing implementation code |
-| 91 | `ui-styling.zip` | .opencode/skills | Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based v... |
-| 92 | `ui-ux-design-pro-skill.zip` | .opencode/skills | > |
-| 93 | `ui-ux-pro-max.zip` | .opencode/skills | UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages,... |
-| 94 | `unity-ai-game-creator.zip` | .opencode/skills | Transform raw game ideas into complete Unity projects with AI-powered asset generation, scene blueprints, music/SFX prompts, and step-by-step development pro... |
-| 95 | `unity-developer.zip` | .opencode/skills | Build Unity games with optimized C# scripts, efficient rendering, and proper asset management. Masters Unity 6 LTS, URP/HDRP pipelines, and cross-platform de... |
-| 96 | `unity-ecs-patterns.zip` | .opencode/skills | Production patterns for Unity's Data-Oriented Technology Stack (DOTS) including Entity Component System, Job System, and Burst Compiler. |
-| 97 | `unreal-engine-cpp-pro.zip` | .opencode/skills | Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance patterns, and best practices. |
-| 98 | `using-superpowers.zip` | .opencode/skills | Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions |
-| 99 | `web-animation.zip` | .opencode/skills |  |
-| 100 | `writing-plans.zip` | .opencode/skills | Use when you have a spec or requirements for a multi-step task, before touching code |
-| 101 | `writing-skills.zip` | .opencode/skills | Use when creating new skills, editing existing skills, or verifying skills work before deployment |
+| # | Skill | Description |
+|---|-------|-------------|
+| 1 | `banner-design.zip` | Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with AI-generated visuals. Actions... |
+| 2 | `brainstorming.zip` | You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user int... |
+| 3 | `brand.zip` | Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing ass... |
+| 4 | `brandkit.zip` | Premium brand-kit image generation skill for creating high-end brand-guidelines boards, logo systems, identity decks, and visual-world presentation... |
+| 5 | `caveman.zip` | Ultra-compressed communication mode. Cuts output tokens 65% (measured) by speaking like caveman while keeping full technical accuracy. Supports int... |
+| 6 | `caveman-commit.zip` | Ultra-compressed commit message generator. Cuts noise from commit messages while preserving intent and reasoning. Conventional Commits format. Subj... |
+| 7 | `caveman-compress.zip` | Compress natural language memory files (CLAUDE.md, todos, preferences) into caveman format to save input tokens. Preserves all technical substance,... |
+| 8 | `caveman-help.zip` | Quick-reference card for all caveman modes, skills, and commands. One-shot display, not a persistent mode. Trigger: /caveman-help, "caveman help", ... |
+| 9 | `caveman-review.zip` | Ultra-compressed code review comments. Cuts noise from PR feedback while preserving the actionable signal. Each comment is one line: location, prob... |
+| 10 | `caveman-stats.zip` | Show real token usage and estimated savings for the current session. Reads directly from the Claude Code session log — no AI estimation. Triggers o... |
+| 11 | `clarity.zip` | Draft, rewrite, or review reader-facing prose so it is specific, useful, and recognizably the author's without inventing facts or performing humann... |
+| 12 | `dashboard-designer-skill.zip` | Use this skill when designing a data dashboard—choosing KPIs, structuring layout, applying visual hierarchy, or deciding which BI tool to use. Trig... |
+| 13 | `design.zip` | Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini AI), corporate identity program (50 deliv... |
+| 14 | `design-system.zip` | Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component), CSS variables, spacing/typog... |
+| 15 | `design-taste-frontend.zip` | Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships inte... |
+| 16 | `emilkowalski-motion.zip` | Motion-design follow-up skill inspired by Emil Kowalski's animation guidance. Use after an interface exists to add tasteful micro-interactions, sta... |
+| 17 | `frontend-design.zip` | Create distinctive, production-grade frontend interfaces with strong visual direction, polished typography, considered layout, and working HTML/CSS... |
+| 18 | `frontend-dev.zip` | Full-stack frontend with cinematic animations, AI-generated media via MiniMax API, and generative art. Useful for hero pages and showcase sites. |
+| 19 | `game-developer.zip` | Use when building game systems, implementing Unity/Unreal Engine features, or optimizing game performance. Invoke to implement ECS architecture, co... |
+| 20 | `game-development.zip` | Game development orchestrator. Routes to platform-specific skills based on project needs. |
+| 21 | `game-development-2d-games.zip` | 2D game development principles. Sprites, tilemaps, physics, camera. |
+| 22 | `game-development-3d-games.zip` | 3D game development principles. Rendering, shaders, physics, cameras. |
+| 23 | `game-development-game-art.zip` | Game art principles. Visual style selection, asset pipeline, animation workflow. |
+| 24 | `game-development-game-audio.zip` | Game audio principles. Sound design, music integration, adaptive audio systems. |
+| 25 | `game-development-game-design.zip` | Game design principles. GDD structure, balancing, player psychology, progression. |
+| 26 | `game-development-mobile-games.zip` | Mobile game development principles. Touch input, battery, performance, app stores. |
+| 27 | `game-development-multiplayer.zip` | Multiplayer game development principles. Architecture, networking, synchronization. |
+| 28 | `game-development-pc-games.zip` | PC and console game development principles. Engine selection, platform features, optimization strategies. |
+| 29 | `game-development-vr-ar.zip` | VR/AR development principles. Comfort, interaction, performance requirements. |
+| 30 | `game-development-web-games.zip` | Web browser game development principles. Framework selection, WebGPU, optimization, PWA. |
+| 31 | `godot-4-migration.zip` | Specialized guide for migrating Godot 3.x projects to Godot 4 (GDScript 2.0), covering syntax changes, Tweens, and exports. |
+| 32 | `godot-clear-children.zip` | Godot正确清除子节点的方法。当用户需要了解如何正确清除子节点时使用。 |
+| 33 | `godot-console.zip` | 提供Godot引擎控制台命令行工具的调用能力，支持运行Godot命令、执行脚本、导出项目等操作，适用于游戏开发和自动化任务。 |
+| 34 | `godot-gdscript-grammar.zip` | Godot GDScript语法详解。当用户需要GDScript语法相关信息时使用。 |
+| 35 | `godot-gdscript-patterns.zip` | Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimization. Use when building Godot games, implementing game syst... |
+| 36 | `godot-global-variables.zip` | Godot全局变量使用指南。当用户需要全局变量和Autoload相关信息时使用。 |
+| 37 | `godot-knowledge.zip` | 提供 Godot GDScript 编程语言和 TSCN 场景文件格式的完整知识库，适用于游戏开发、UI 设计和场景构建。 |
+| 38 | `godot-packedscene.zip` | Godot PackedScene使用指南。当用户需要场景加载和池化相关信息时使用。 |
+| 39 | `godot-scene.zip` | Godot UI与场景开发指南。当用户需要UI和场景开发相关信息时使用。 |
+| 40 | `godot-serialization-pattern.zip` | Godot序列化模式指南。当用户需要数据序列化和反序列化相关信息时使用。 |
+| 41 | `godot-singleton-pattern.zip` | Godot单例模式指南。当用户需要单例模式实现相关信息时使用。 |
+| 42 | `godot-tscn-format.zip` | Godot TSCN文件格式详解。当用户需要TSCN文件格式相关信息时使用。 |
+| 43 | `godot-unix-timestamp-fix.zip` | Godot Unix时间戳错误修复。当用户遇到Unix时间戳相关问题时使用。 |
+| 44 | `gpt-taste.zip` | Elite UX/UI & Advanced GSAP Motion Engineer. Enforces Python-driven true randomization for layout variance, strict AIDA page structure, wide editor... |
+| 45 | `graphify-setup.zip` | One-command onboarding of a vibe-coding project onto graphify. Builds the project knowledge graph, wires opencode AND Claude Code to consult the gr... |
+| 46 | `gsap-core.zip` | Official GSAP skill for the core API — gsap.to(), from(), fromTo(), easing, duration, stagger, defaults, gsap.matchMedia() (responsive, prefers-red... |
+| 47 | `imagegen-frontend-mobile.zip` | Elite mobile app image-generation skill for creating premium, app-native screen concepts and flows. Designed for iOS, Android, and cross-platform m... |
+| 48 | `imagegen-frontend-web.zip` | Elite frontend image-direction skill for generating premium, conversion-aware website design references. CRITICAL OUTPUT RULE — generate ONE separa... |
+| 49 | `image-to-code.zip` | Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze th... |
+| 50 | `impeccable-design-polish.zip` | Follow-up design polish skill inspired by Impeccable. Use after a web or HTML artifact exists to audit, critique, polish, animate, harden, and prep... |
+| 51 | `industrial-brutalist-ui.zip` | Raw mechanical interfaces fusing Swiss typographic print with military terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian c... |
+| 52 | `minimalist-ui.zip` | Clean editorial-style interfaces. Warm monochrome palette, typographic contrast, flat bento grids, muted pastels. No gradients, no heavy shadows. |
+| 53 | `output-skill.zip` | Overrides default LLM truncation behavior. Enforces complete code generation, bans placeholder patterns, and handles token-limit splits cleanly. Ap... |
+| 54 | `ponytail.zip` | Forces the laziest solution that actually works, simplest, shortest, most minimal. Channels a senior dev who has seen everything: question whether ... |
+| 55 | `ponytail-audit.zip` | Whole-repo audit for over-engineering. Like ponytail-review, but scans the entire codebase instead of a diff: a ranked list of what to delete, simp... |
+| 56 | `ponytail-debt.zip` | Harvest every `ponytail:` comment in the codebase into a debt ledger, so the deliberate shortcuts and deferrals ponytail leaves behind get tracked ... |
+| 57 | `ponytail-gain.zip` | Show ponytail's measured impact as a compact scoreboard: less code, less cost, more speed, from the benchmark medians. One-shot display, not a pers... |
+| 58 | `ponytail-help.zip` | Quick-reference card for all ponytail modes, skills, and commands. One-shot display, not a persistent mode. Trigger: /ponytail-help, "ponytail help... |
+| 59 | `ponytail-review.zip` | Code review focused exclusively on over-engineering. Finds what to delete: reinvented standard library, unneeded dependencies, speculative abstract... |
+| 60 | `prd-generator.zip` | Generate comprehensive Product Requirements Documents (PRDs) for product managers. Use this skill when users ask to "create a PRD", "write product ... |
+| 61 | `radix-ui.zip` | Build accessible, polished UI with Radix — the pre-styled **Radix Themes** library, or the headless **Radix Primitives** that power shadcn/ui. |
+| 62 | `redesign-existing-projects.zip` | Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standard... |
+| 63 | `slides.zip` | Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies. |
+| 64 | `soft-skill.zip` | Teaches the AI to design like a high-end agency. Defines the exact fonts, spacing, shadows, card structures, and animations that make a website fee... |
+| 65 | `stitch-design-taste.zip` | Semantic Design System Skill for Google Stitch. Generates agent-friendly DESIGN.md files that enforce premium, anti-generic UI standards — strict t... |
+| 66 | `superpowers-executing-plans.zip` | Use when you have a written implementation plan to execute in a separate session with review checkpoints |
+| 67 | `superpowers-finish-branch.zip` | Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by pr... |
+| 68 | `superpowers-git-worktrees.zip` | Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace... |
+| 69 | `superpowers-parallel.zip` | Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies |
+| 70 | `superpowers-receive-review.zip` | Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requir... |
+| 71 | `superpowers-request-review.zip` | Use when completing tasks, implementing major features, or before merging to verify work meets requirements |
+| 72 | `superpowers-subagent.zip` | Use when executing implementation plans with independent tasks in the current session |
+| 73 | `superpowers-verification.zip` | Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirm... |
+| 74 | `systematic-debugging.zip` | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes |
+| 75 | `taste-skill-v1.zip` | The original v1 taste-skill, preserved for projects depending on its exact behavior. The current default is `design-taste-frontend` (v2 experimenta... |
+| 76 | `test-driven-development.zip` | Use when implementing any feature or bugfix, before writing implementation code |
+| 77 | `ui-styling.zip` | Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canv... |
+| 78 | `ui-ux-design-pro-skill.zip` | Senior-level UI/UX design expert for building data-driven, premium production interfaces. Use when you need to: 1. Design complex applications (das... |
+| 79 | `ui-ux-pro-max.zip` | UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, includ... |
+| 80 | `unity-ai-game-creator.zip` | Transform raw game ideas into complete Unity projects with AI-powered asset generation, scene blueprints, music/SFX prompts, and step-by-step devel... |
+| 81 | `unity-developer.zip` | Build Unity games with optimized C# scripts, efficient rendering, and proper asset management. Masters Unity 6 LTS, URP/HDRP pipelines, and cross-p... |
+| 82 | `unity-ecs-patterns.zip` | Production patterns for Unity's Data-Oriented Technology Stack (DOTS) including Entity Component System, Job System, and Burst Compiler. |
+| 83 | `unreal-engine-cpp-pro.zip` | Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance patterns, and best practices. |
+| 84 | `using-superpowers.zip` | Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifyi... |
+| 85 | `web-animation.zip` | Add animations, scroll effects, micro-interactions, and motion to any React project. |
+| 86 | `writing-plans.zip` | Use when you have a spec or requirements for a multi-step task, before touching code |
+| 87 | `writing-skills.zip` | Use when creating new skills, editing existing skills, or verifying skills work before deployment |
