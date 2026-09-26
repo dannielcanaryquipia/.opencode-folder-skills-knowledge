@@ -12328,5 +12328,25 @@
     "mtime": 1789036785.6574123,
     "ast_hash": "ed3e8dc892cda26d101437c9694ca358",
     "semantic_hash": ""
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1790393159.7560055,
+    "ast_hash": "769b6a2259b1059541f8ed679d6b3331",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1789303728.9840841,
+    "ast_hash": "278cb4fa62cb41a43effcbe2eac4d621",
+    "semantic_hash": ""
+  },
+  "skills-upload/INDEX.md": {
+    "mtime": 1790392805.6214845,
+    "ast_hash": "3a86b4724df4bf958f9710a4d94dcdb7",
+    "semantic_hash": ""
+  },
+  "skills-upload/bundles/BUNDLES-INDEX.md": {
+    "mtime": 1790393057.9192946,
+    "ast_hash": "da678c8421862846f1fee10f00c8e413",
+    "semantic_hash": ""
   }
 }
