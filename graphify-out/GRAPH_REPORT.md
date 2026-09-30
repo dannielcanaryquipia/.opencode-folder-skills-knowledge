@@ -1,16 +1,16 @@
-# Graph Report - .opencode  (2026-09-26)
+# Graph Report - .opencode  (2026-09-30)
 
 ## Corpus Check
-- 2184 files · ~4,034,780 words
+- 2193 files · ~8,244,752 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 30697 nodes · 37641 edges · 2291 communities (2153 shown, 138 thin omitted)
+- 30707 nodes · 37649 edges · 2312 communities (2173 shown, 139 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 706 edges (avg confidence: 0.71)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8ec9d080`
+- Built from commit: `5d3588dd`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -18,8 +18,8 @@
 - AgentTUI
 - _resolve_claude_dir
 - core/__init__.py
-- hooks.py
-- main.py
+- HooksManagerDialog
+- Icons
 - Document
 - BaseSchemaValidator
 - インストール方法
@@ -71,7 +71,7 @@
 - Molecules
 - Quick Reference
 - _parse
-- AssetDetailDialog
+- asset_discovery.py
 - TUI Visual Enhancement Roadmap
 - AI Intelligence Implementation Summary
 - Phase 2: Advanced Reasoning System Enhancements
@@ -102,7 +102,7 @@
 - generate.ts
 - Codebase Design Skill
 - Toast
-- core/skills.py
+- load_skills_registry
 - Cortex Competitive Analysis
 - Phase 5 Feature 2: Skill Rating & Feedback System - Implementation Summary
 - Connect Claude Code to tools via MCP
@@ -130,7 +130,7 @@
 - telemetry_common.cjs
 - rules.ts
 - write_manifest
-- notes.py
+- get_vault_path
 - tmux/__init__.py
 - Workflows and Orchestrate Views Implementation
 - TUI Asset Manager Implementation Plan
@@ -158,7 +158,7 @@
 - tui_supersaiyan.py
 - Industrial Brutalist UI Skill
 - Clarity
-- git/__init__.py
+- worktree.py
 - memory/config.py
 - run_tmux
 - Skills View TUI Implementation Summary
@@ -212,7 +212,7 @@
 - temp_dir
 - Logo Usage Rules
 - patterns.js
-- stash.py
+- git_stash_drop
 - 安装方法
 - BackupManagerDialog
 - README.th.md
@@ -257,7 +257,7 @@
 - handle_tmux_command
 - build_parser
 - check_atomicity
-- compute_project_signature
+- ProjectSignature
 - tmux_rename
 - Cortex TUI Implementation Summary
 - Cortex Custom Skills
@@ -274,10 +274,10 @@
 - Logo AI Prompt Engineering
 - Writing Plans Skill
 - DocsBrowserApp
-- DocxXMLEditor
+- XMLEditor
 - Color Palette Management
 - reference-builder.md
-- _log_hook
+- agent_suggest.py
 - TUI Fixes Applied
 - WS4: Documentation Workstream
 - Multi-Specialist Parallel Review
@@ -387,14 +387,14 @@
 - Accessibility
 - Animation and Motion
 - SEOExtractor
-- AdaptiveFooter
-- consult_llm.py
+- Text
+- main.py
 - EvaluationHarnessTest
 - agents/code-reviewer.md
 - inactive-code-reviewer.md
 - MCPServerDefinition
 - git_branch_create
-- get_vault_path
+- test_memory_config.py
 - tmux_snapshot
 - ._run_command
 - Web Animation Skill
@@ -473,7 +473,7 @@
 - LogViewerScreen
 - Brand Consistency Checklist
 - CONTEXT.md (ubiquitous language glossary)
-- ProjectSignature
+- MCPServerInfo
 - output.py
 - ResponsiveFooter
 - AI Intelligence Features
@@ -494,7 +494,7 @@
 - Terraform Best Practices
 - DREAD Criteria
 - TypeScript Advanced Patterns
-- TestCommandPaletteFiltering
+- git/__init__.py
 - llama.cpp -- C/C++ LLM Inference Framework Guide
 - render.py
 - parse_output.py
@@ -555,7 +555,7 @@
 - Design Principles
 - clarity.js
 - inactive-tutorial-engineer.md
-- .compose
+- _get_git_info_uncached
 - 4.1 CLI Layer
 - TUI Views Implementation Summary
 - Cortex - Documentation Index
@@ -594,9 +594,9 @@
 - to_strudel.py
 - test_skill.py
 - Gameplay Effects & Attributes -- Detailed Reference
-- fetch_and_summarize.py
+- _build_status_data
 - Design Principles
-- RedliningValidator
+- slash_commands.py
 - icon/generate.py
 - Component Specifications
 - Design System Audit
@@ -610,8 +610,8 @@
 - Items
 - Items
 - prompt-engineer.md
-- IntelligentAgent
-- DOCXSchemaValidator
+- hooks/__init__.py
+- format_default
 - Rules
 - 4. Core Subsystems
 - Cortex TUI - Visual Implementation Analysis
@@ -672,7 +672,7 @@
 - Questions people ask
 - frontend-optimizer.md
 - state-architect.md
-- RedliningValidator
+- StatusIcon
 - BM25
 - Web Animation Skill
 - Cortex: Master Architecture Document
@@ -717,7 +717,7 @@
 - The 8 categories
 - Bulletproofing Skills Against Rationalization
 - Writing Skills
-- TestCommandPaletteFuzzyMatch
+- workspace_validator.py
 - OpenCode Model Selection Guide
 - Seedance 2.0 — References, Start Frames & Consistency
 - Footer.tsx
@@ -804,7 +804,7 @@
 - Typography
 - Pre-Delivery Checklist (canonical — the only one)
 - Quick Reference
-- ZipFile
+- setup.py
 - Items
 - Items
 - Items
@@ -1059,7 +1059,7 @@
 - Clarity
 - Context Formats
 - .opencode — Personal Agent Workspace
-- TestInstallTarget
+- _context.py
 - Week 0: Foundation Complete ✅
 - Next-Level TUI Visual Enhancements - Implementation Summary
 - Feature 2: Skill Rating & Feedback System ⭐
@@ -1102,7 +1102,7 @@
 - Skill structure
 - Web Animation — Project Quick Start
 - test_skills_legacy_cleanup.py
-- unit
+- _parse
 - Karpathy-Style Eval Loop
 - _build
 - video-download
@@ -1339,9 +1339,9 @@
 - Evaluation results
 - CommunityError
 - rearrange_presentation
-- ._get_selected_memory_note
+- subagent_output_validator.py
 - Execution Steps
-- load_modes
+- _parse_mode_file
 - Cortex TUI Entity Relationship Guide
 - Implementation Plan
 - Prompt-Based Hooks
@@ -1408,7 +1408,7 @@
 - Anthropic Skilljar Course Extractor
 - Confirmation Gate (Phase 5)
 - Auto-Research
-- 3. GPU Backend Build Options
+- large_file_gate.py
 - 5. Integration Method 1: add_subdirectory (Embedding)
 - 3. Parameter Structs
 - 5. Model Loading and Management
@@ -1418,7 +1418,7 @@
 - Testing in UE5
 - Unreal Engine Gameplay Ability System (GAS) -- C++ Guide
 - Advanced Patterns
-- summarize_videos.py
+- Using Phosphor Icons in a Web/App Project
 - input
 - Expo Plugin
 - fetch.js
@@ -1541,11 +1541,11 @@
 - Additional Debugging Tools
 - BUNDLES-INDEX.md
 - TechStack.tsx
-- setup.py
+- DocxXMLEditor
 - UMG animations from C++
 - Slides Reference
 - HTML Slide Template
-- primitive
+- duration
 - Design Taste Frontend (v2)
 - expo
 - expo-migrate-module Skill
@@ -1593,7 +1593,7 @@
 - Performance & Best Practices
 - Module Structure
 - Data Models
-- Model Optimization Strategy
+- Future Enhancements
 - Mobile-Specific Screens
 - Visual Components
 - Troubleshooting
@@ -1717,11 +1717,11 @@
 - task-1.6 - Tutorial-watch-mode-setup-and-use.md
 - task-1.7 - Tutorial-multi-LLM-consultation-workflow.md
 - task-1.8 - Tutorial-review-prep-with-cortex-review.md
-- Performance Best Practices for Blueprints
+- _detect_framework
 - README.pt-BR.md
 - README.vi.md
 - .__init__
-- uninstall
+- AgentCommandProvider
 - README.zh-CN.md
 - .on_input_submitted
 - Style Guidelines
@@ -1757,23 +1757,23 @@
 - Related Documentation
 - Installation System
 - Server Discovery & Validation
-- Issue Analysis
-- Best Practices Summary
+- 2. Basic Build from Source
+- How It Works
 - OpenCodePluginTest
 - site.config.ts
-- Tools and Resources
+- is_protected_branch
 - Styling System
 - TUI Interface
 - Module Structure
 - Quick Links to Documentation
 - Notes for Developers
 - Priority Enhancement Recommendations
-- 12. Python Client Examples
-- .action_mcp_browse_install
+- 4.7 MCP Integration
+- 11. Common Performance Issues
 - Architecture & Design (4 skills)
 - Skill Development Guidelines
 - Security (4 skills)
-- .__init__
+- AdaptiveFooter
 - Part 2: Understanding the Layout
 - Part 3: Working with Agents
 - Part 8: AI Assistant & Recommendations
@@ -1830,11 +1830,11 @@
 - 10. Sampling API (Chain Pattern)
 - SoundFonts
 - Navbar.tsx
-- 10. Security Architecture
+- 6. Common Pitfalls
 - $type
 - Android: Native Library Integration
 - Windows: Header Conflicts
-- 50
+- _log_hook
 - radius
 - Contributing
 - EAS Metadata
@@ -1926,7 +1926,7 @@
 - Coordination & Synchronization
 - Workstream 2: Refactoring (Weeks 2-7)
 - Feature 4: Usage Analytics Dashboard 📊
-- Core Concepts
+- Model Optimization Strategy
 - Documentation Tools & Infrastructure
 - Resource Requirements
 - Success Metrics
@@ -1938,15 +1938,17 @@
 - Configuration
 - Security Considerations
 - Pricing & Costs
-- Real-World Examples
+- 3. Custom C++ Integration (Build llama.cpp as Static Library for UE)
 - Monitoring & Analytics
 - When to Enable LLM
 - Integration with Other Features
 - Collaboration Commands
 - Session Commands
-- Testing Strategies
-- Troubleshooting
-- 9. Output Access
+- enum
+- cmd_review.py
+- Test Execution Baseline
+- StatusData
+- Cost Analysis
 - Open-Source Interactive Website Templates
 - Component Architecture
 - Related Documentation
@@ -1954,6 +1956,11 @@
 - Testing Recommendations
 - Code Structure
 - Getting Started with Enhancement
+- 800
+- 11. Chat Templates
+- Best Practices
+- Hybrid Orchestration Patterns
+- Core Systems
 - Integration with Agents
 - Radix UI
 - Part 6: Command Palette Power-User Feature
@@ -1980,7 +1987,8 @@
 - release-analysis/scripts/compile-html.sh
 - openai.yaml fields (full example + descriptions)
 - JWT Security
-- XML External Entity (XXE)
+- → AI Intelligence & Automation {#ai-intelligence}
+- Registry Validation
 - Checklist for effective Skills
 - Core principles
 - Phase 4 — Validate / Eval Loop
@@ -1991,7 +1999,7 @@
 - API surface
 - Misc
 - Compiler / save quirks
-- padding-y
+- 5. Memory Optimization
 - Media Reference
 - expo-skills/skills.sh.json
 - Resources & Tools
@@ -2019,6 +2027,8 @@
 - task-4 - cortex-review-standalone-code-review-wrapping-agent-loops-reviewer.md
 - task-5 - cortex-consult-multi-LLM-fan-out-for-second-opinions.md
 - task-6 - Add-failure-path-coverage-for-agent-loops-review-providers.md
+- 12. Python Client Examples
+- RENDERING & VISUAL
 - Mobile App Patterns
 - Success Criteria Assessment
 - Agent guide
@@ -2032,10 +2042,12 @@
 - apply_patch
 - Risk Management
 - pull_request_template.md
-- 4.9 Validation & Review System
+- GAMEPLAY FRAMEWORK
+- $type
 - Troubleshooting
 - Design Commands
 - Quality Commands
+- lg
 - Immediate (Today/Tomorrow)
 - Feature 2: Expanded Reasoning Profiles
 - Feature 4: Reasoning Metrics Dashboard
@@ -2044,6 +2056,10 @@
 - Loop 2: Test Writing Loop
 - File Locations
 - Current State Summary
+- Understanding Recommendations
+- Agent Model Assignments
+- Model Assignment Criteria
+- Version History
 - destructive-foreground
 - Learning Paths
 - Documentation Rules
@@ -2058,13 +2074,13 @@
 - primary-foreground
 - 17. Complete Working Examples
 - 6. Context Creation
-- 11. Common Performance Issues
+- Troubleshooting
 - main
 - destructive
 - secondary-foreground
 - ShadcnInstaller
-- .test_add_components_no_config
-- 2. Llama-Unreal Plugin (Recommended)
+- Development Workflows
+- Framework Entry Points
 - ring
 - Self-contained HTML results viewer
 - expo-skills Banner Image
@@ -2095,9 +2111,12 @@
 - inactive-CLAUDE.md
 - efficiency-rules.md
 - Process
+- MCP Integration
 - launch_tui.sh
 - skill-keywords-needing-review.md
 - skill-migration-orphans.md
+- Reference Documentation
+- keywords
 - pre-commit
 - backlog.md
 - getting-started/index.md
@@ -2135,7 +2154,7 @@
 - 4.8 Component Toggle System
 - .test_add_components_already_installed
 - Exit Scenarios
-- 🎯 Use Cases
+- XML External Entity (XXE)
 - Basic Usage
 - Commands
 - Creating a new PowerPoint presentation **without a template**
@@ -2182,7 +2201,7 @@
 - Pre-Delivery Checklist
 - How to Use This Skill
 - AGENTS.md
-- enum
+- padding-x
 - Track B Results ✅ COMPLETE
 - Track A Results ✅ COMPLETE
 - Benefits of Three-Phase Gate
@@ -2193,10 +2212,10 @@
 - Best Practices
 - Feature 6: Personalization Engine 🎯
 - Common Pitfalls
-- 🧠 What It Does
-- 🚨 Best Practices
-- 🛠️ CLI Usage Examples
-- 📺 TUI AI Assistant View (Key 8)
+- Configuration
+- API Reference
+- Changelog
+- Implementation Status
 - Hooks & Automation
 - Part 5: Managing MCP Servers
 - skills
@@ -2204,8 +2223,8 @@
 - anthropic-best-practices.md
 - 7. Integration Method 3: Static Library with PIC
 - 9. Docker Images
-- 5. Memory Optimization
-- 10. Supported Model Architectures
+- Implementation Guidelines
+- Monitoring & Observability
 - 4. Quantization Commands
 - 10. Router Mode
 - Game Development
@@ -2215,6 +2234,7 @@
 - Example Workflow
 - ASSET-MANIFEST — where files go, and what's checked
 - MOTION-SPEC — storyboard & recipe bank
+- Performance Metrics
 - .opencode/opencode.json
 - i-have-adhd/opencode.json
 - 7. Key Workflows
@@ -2229,11 +2249,12 @@
 - Files Changed/Created
 - Integration & Architecture
 - Performance Metrics
-- 🔬 Advanced Features
-- 🧪 How It Works
-- 🎓 Learning Examples
-- 🆘 Troubleshooting
-- keywords
+- Contributing
+- Best Practices
+- 🤝 Collaboration Flow & Skill Auto-Suggestions {#collaboration}
+- References
+- 📖 Appendix: Quick Command Reference
+- Part 1: Installation & First Launch
 - file_patterns
 - name
 - cortex-config.json
@@ -2247,11 +2268,11 @@
 - Competitive Advantages
 - Testing
 - Getting Started
-- 🎉 Benefits
-- 🚀 Quick Start
-- 🎮 Keyboard Shortcuts
-- 📖 Appendix: Quick Command Reference
-- Part 1: Installation & First Launch
+- test_shadcn_add.py
+- Configuration Files
+- Overview
+- .test_add_components_dry_run
+- .test_init_custom_project_root
 - 14. LoRA Adapters
 - Desktop Applications
 - .temp_project
@@ -2260,7 +2281,6 @@
 - GEMINI.md
 - always-on.sh script
 - opencode_plugin_driver.mjs
-- .test_list_installed_empty
 - .test_add_breakpoints
 - .test_init_default_typescript
 - .test_generate_config_with_plugins
@@ -2375,31 +2395,31 @@
 - **Expo Modules API 2.0 Macro Family** — skills_expo_skills_plugins_expo_experiments_skills_expo_migrate_module_references_migration_map_expo_modules_api_20_macro_api, skills_expo_skills_plugins_expo_experiments_skills_expo_migrate_module_references_migration_map_expomodule_macro, skills_expo_skills_plugins_expo_experiments_skills_expo_migrate_module_references_migration_map_js_macro, skills_expo_skills_plugins_expo_experiments_skills_expo_migrate_module_references_migration_map_event_macro, skills_expo_skills_plugins_expo_experiments_skills_expo_migrate_module_references_migration_map_record_macro, skills_expo_skills_plugins_expo_experiments_skills_expo_migrate_module_references_migration_map_sharedobject_macro, skills_expo_skills_plugins_expo_experiments_skills_expo_migrate_module_references_compatibility_capability_gates [INFERRED 0.95]
 - **Object Pooling Pattern Across Game Dev Skills** — skills_game_developer_skill_object_pool, skills_game_development_skill_object_pooling_pattern, skills_game_development_web_games_skill_object_pooling, skills_game_development_pc_games_skill_object_pooling [INFERRED 0.95]
 
-## Communities (2291 total, 138 thin omitted)
+## Communities (2312 total, 139 thin omitted)
 
 ### Community 0 - "AgentTUI"
 Cohesion: 0.01
-Nodes (213): AnyDataTable, Key, SkillProvider, Resolve the cortex package root directory (where assets are bundled). This is…, _resolve_cortex_root(), _ensure_skill_symlink(), link_all_codex_skills(), link_all_provider_skills() (+205 more)
+Nodes (156): AnyDataTable, Scrollable text viewer for long-form content (docs, snippets, logs)., Focus the scroll region so keyboard scrolling works immediately., TextViewerDialog, Truncate text with ellipsis. Args: text: Text to truncate max_length: Maximum…, AgentTUI, main(), Any (+148 more)
 
 ### Community 1 - "_resolve_claude_dir"
-Cohesion: 0.02
-Nodes (156): _iter_md_files(), _parse_active_entries(), Resolve the .claude directory for user configuration. Defaults to ``~/.claude``…, Return non-empty, stripped entries from an ``.active-*`` file., Write normalized entries to an ``.active-*`` file., _refresh_claude_md(), _resolve_claude_dir(), _write_active_entries() (+148 more)
+Cohesion: 0.03
+Nodes (154): auto_cleanup_backups(), BackupInfo, create_backup(), delete_backup(), format_size(), get_backup_dir(), get_backup_summary(), list_backups() (+146 more)
 
 ### Community 2 - "core/__init__.py"
-Cohesion: 0.03
-Nodes (187): FrontMatterToken, _active_agent_files(), _agent_basename(), agent_deps(), agent_graph(), agent_status(), agent_validate(), AgentGraphNode (+179 more)
+Cohesion: 0.02
+Nodes (219): FrontMatterToken, _active_agent_files(), _agent_basename(), agent_deps(), agent_graph(), agent_status(), agent_validate(), AgentGraphNode (+211 more)
 
-### Community 3 - "hooks.py"
-Cohesion: 0.03
-Nodes (92): HookTarget, _check_hook_executable(), configure_statusline(), create_hook_template(), _detect_event_from_text(), detect_settings_files(), _find_hook_conflict(), get_available_hooks() (+84 more)
+### Community 3 - "HooksManagerDialog"
+Cohesion: 0.08
+Nodes (18): HooksManagerDialog, ComposeResult, Path, Pressed, Selected, Initialize the hooks manager. Args: plugin_dir: Plugin directory for finding…, Load hooks when mounted., Load available and installed hooks. (+10 more)
 
-### Community 4 - "main.py"
+### Community 4 - "Icons"
 Cohesion: 0.01
-Nodes (227): CommandTuple, ClaudeDir, Represents a discovered cortex directory., Get display name for the directory., CommandRegistry, Command palette with fuzzy search for quick navigation and actions., Registry for available commands in the TUI., Register a new command. Args: name: Command name (e.g., "Show Agents")… (+219 more)
+Nodes (179): count_category_tokens(), count_file_tokens(), estimate_tokens(), format_token_summary(), get_active_context_tokens(), get_token_breakdown_table(), Path, Token counting utilities for cortex. This module provides token estimation for… (+171 more)
 
 ### Community 5 - "Document"
-Cohesion: 0.05
-Nodes (36): Document, _generate_hex_id(), _generate_rsid(), Add a single comment to comments.xml., Add a single comment to commentsExtended.xml., Add a single comment to commentsIds.xml., Add a single comment to commentsExtensible.xml., Generate XML for comment range start. (+28 more)
+Cohesion: 0.06
+Nodes (32): Document, _generate_hex_id(), Add a single comment to comments.xml., Add a single comment to commentsExtended.xml., Add a single comment to commentsIds.xml., Add a single comment to commentsExtensible.xml., Generate XML for comment range start., Generate XML for comment range end with reference run. Note: w:rsidR is… (+24 more)
 
 ### Community 6 - "BaseSchemaValidator"
 Cohesion: 0.07
@@ -2411,27 +2431,27 @@ Nodes (65): アンインストール, アンインストール, アンインス�
 
 ### Community 8 - "SessionContext"
 Cohesion: 0.05
-Nodes (43): AgentDeactivationRecommendation, AgentRecommendation, ContextDetector, get_current_context(), PatternLearner, Any, Path, Intelligent automation system for claude-ctx framework. This module provides… (+35 more)
+Nodes (50): AgentDeactivationRecommendation, AgentRecommendation, ContextDetector, get_current_context(), IntelligentAgent, PatternLearner, Any, Path (+42 more)
 
 ### Community 9 - "TourManager"
 Cohesion: 0.04
 Nodes (47): get_tour_by_id(), list_available_tours(), Tour definitions for the TUI. This module contains predefined tours that guide…, Get a tour definition by ID. Args: tour_id: ID of the tour to retrieve.…, Get all available tour definitions. Returns: Dictionary of tour ID to…, TUI Tour System for guided onboarding. This package provides an interactive…, Path, Tour state management and persistence. (+39 more)
 
 ### Community 10 - "BaseSchemaValidator"
-Cohesion: 0.06
-Nodes (24): BaseSchemaValidator, Base validator with common validation logic for document files., Base validator with common validation logic for document files., Run all validation checks and return True if all pass., Validate that all XML files are well-formed., Validate that namespace prefixes in Ignorable attributes are declared., Validate that specific IDs are unique according to OOXML requirements., Validate that all .rels files properly reference files and that all files are… (+16 more)
+Cohesion: 0.07
+Nodes (19): BaseSchemaValidator, Base validator with common validation logic for document files., Run all validation checks and return True if all pass., Validate that all XML files are well-formed., Validate that namespace prefixes in Ignorable attributes are declared., Validate that specific IDs are unique according to OOXML requirements., Validate that all .rels files properly reference files and that all files are…, Validate that all r:id attributes in XML files reference existing IDs in their… (+11 more)
 
 ### Community 11 - "cli.py"
-Cohesion: 0.07
-Nodes (65): _decode_project_cwd(), _enable_argcomplete(), _get_bookmarks_file(), _get_codex_dir(), _get_docs_dir(), _get_plans_dir(), _get_provider_dir(), _handle_agent_command() (+57 more)
+Cohesion: 0.06
+Nodes (69): _decode_project_cwd(), _enable_argcomplete(), _get_bookmarks_file(), _get_codex_dir(), _get_docs_dir(), _get_plans_dir(), _get_provider_dir(), _handle_agent_command() (+61 more)
 
 ### Community 12 - "build_index"
 Cohesion: 0.07
 Nodes (45): build_index(), _canonical_doc(), _canonical_entry(), _coerce_confidence(), _coerce_str_list(), IndexDoc, IndexEntry, _is_hidden() (+37 more)
 
 ### Community 13 - "NAVIGATOR.md"
-Cohesion: 0.05
-Nodes (26): Changelog, About The Older LLM Notes In This Folder, AI Intelligence Documentation, Current State, Warp AI & Terminal AI Integration, Notes, Overview, Registry Validation (+18 more)
+Cohesion: 0.08
+Nodes (13): Changelog, About The Older LLM Notes In This Folder, AI Intelligence Documentation, Current State, Warp AI & Terminal AI Integration, CLI Overview, Development, Documentation (+5 more)
 
 ### Community 14 - "Execution Steps"
 Cohesion: 0.10
@@ -2450,16 +2470,16 @@ Cohesion: 0.07
 Nodes (15): Find matching reasoning rule for a category., Apply reasoning rules to search results., apply_decision_rules(), _object_without_duplicates(), parse_decision_rules(), Return deterministic mutations and an audit trail; never execute data., Parse the canonical condition -> action-array representation., _validate_action() (+7 more)
 
 ### Community 18 - "SkillRecommender"
-Cohesion: 0.05
-Nodes (40): get_skill_path(), main(), Get the path to a skill's SKILL.md file., Main review gate logic., get_stats(), provide_feedback(), Any, Path (+32 more)
+Cohesion: 0.06
+Nodes (37): get_stats(), provide_feedback(), Any, Path, AI-Powered Skill Recommendation System. Intelligent skill recommendations based…, AI-powered skill recommendation engine., Initialize recommender with optional home directory., Initialize SQLite database for recommendations and feedback. (+29 more)
 
 ### Community 19 - "context_export.py"
-Cohesion: 0.07
-Nodes (45): _agent_export_key(), collect_context_components(), export_context(), _get_active_agents(), _get_active_modes(), _get_active_rules(), _get_core_framework_files(), _get_mcp_docs() (+37 more)
+Cohesion: 0.15
+Nodes (25): _agent_export_key(), collect_context_components(), export_context(), _get_active_agents(), _get_active_modes(), _get_active_rules(), _get_core_framework_files(), _get_mcp_docs() (+17 more)
 
 ### Community 20 - "🤖 AI Intelligence System - Complete Guide"
-Cohesion: 0.20
-Nodes (10): 🤖 AI Intelligence System - Complete Guide, 📊 Analytics, 📈 Auto-Activation Logic, 🎯 Core Philosophy, 💾 Data Storage, 🔮 Future Enhancements, 🎓 Learning Curve, Overview (+2 more)
+Cohesion: 0.03
+Nodes (61): 1. Context Detection, 1. Record Successful Sessions, 1. **Security-Sensitive Work**, 2. **Large Refactoring**, 2. Pattern Learning, 2. Review Recommendations, 3. **API Development**, 3. Intelligent Recommendations (+53 more)
 
 ### Community 21 - "basic_memory.py"
 Cohesion: 0.08
@@ -2475,7 +2495,7 @@ Nodes (47): BM25, _contains_phrase(), _domain_keywords(), _exact_match_diagnosti
 
 ### Community 24 - "git_commit"
 Cohesion: 0.09
-Nodes (31): _clear_stale_lock_from_error(), _emit_warnings(), git_commit(), _normalize_path(), Path, Whole-file atomic stage-and-commit. Ports the safe commit workflow from…, Attempt ``git commit``. Returns ``(success, stderr)``. When *with_pathspec* is…, If *stderr* indicates a stale lock, remove it and retry the commit once. (+23 more)
+Nodes (26): _clear_stale_lock_from_error(), git_commit(), Path, Attempt ``git commit``. Returns ``(success, stderr)``. When *with_pathspec* is…, If *stderr* indicates a stale lock, remove it and retry the commit once., Stage files and commit atomically. Returns ``(exit_code, result_message)``. The…, Return an error string if inputs are invalid, else ``None``., Verify each file exists on disk, in the index, or in HEAD (deletions). (+18 more)
 
 ### Community 25 - "installer.py"
 Cohesion: 0.07
@@ -2486,12 +2506,12 @@ Cohesion: 0.06
 Nodes (52): To-Spec Skill, Main Build Chain, Deep Module Seams, Spec (PRD) Document, To-Tickets Skill, Blocking Edges and Frontier, Tracer Bullet Vertical Slice, Wide Refactor Expand-Contract (+44 more)
 
 ### Community 27 - "Asset"
-Cohesion: 0.03
-Nodes (134): Asset, AssetCategory, check_installation_status(), _describe_settings_file(), _discover_agents(), discover_assets(), _discover_commands(), _discover_flags() (+126 more)
+Cohesion: 0.04
+Nodes (90): Asset, Represents a discoverable/installable asset., Get display name including namespace if applicable., Get the relative install path within the cortex directory., _add_commented_reference(), bulk_install(), _color(), _copy_agent() (+82 more)
 
 ### Community 28 - "capture.py"
-Cohesion: 0.09
-Nodes (45): _color(), memory_capture(), memory_fix(), memory_list(), memory_project(), memory_remember(), memory_search(), Core capture functions for memory CLI commands. Implements the main entry… (+37 more)
+Cohesion: 0.11
+Nodes (36): _color(), memory_list(), memory_remember(), memory_search(), Core capture functions for memory CLI commands. Implements the main entry…, List notes in the vault. Args: note_type: Filter by type ("knowledge",…, Search notes by content. Args: query: Search query note_type: Filter by type…, Wrap text in ANSI color codes. (+28 more)
 
 ### Community 29 - "Cortex TUI - Visual Implementation Exploration Summary"
 Cohesion: 0.04
@@ -2601,9 +2621,9 @@ Nodes (11): 10. Charts & Data (LOW), 1. Accessibility (CRITICAL), 2. Touch & Int
 Cohesion: 0.10
 Nodes (20): _handle_branch(), handle_git_command(), _handle_stash(), _handle_worktree(), _print(), Namespace, CLI parser and handler for ``cortex git`` subcommands. Delegates to…, Dispatch ``cortex git <subcommand>``. (+12 more)
 
-### Community 56 - "AssetDetailDialog"
-Cohesion: 0.05
-Nodes (23): AssetDetailDialog, BulkInstallDialog, Path, Pressed, Submitted, Dialog showing asset details with install/uninstall options., Dialog for selecting copy target directory., Initialize asset detail dialog. Args: asset: Asset to display status: Current… (+15 more)
+### Community 56 - "asset_discovery.py"
+Cohesion: 0.02
+Nodes (96): AssetCategory, check_installation_status(), ClaudeDir, _describe_settings_file(), _discover_agents(), discover_assets(), _discover_commands(), _discover_flags() (+88 more)
 
 ### Community 57 - "TUI Visual Enhancement Roadmap"
 Cohesion: 0.04
@@ -2626,8 +2646,8 @@ Cohesion: 0.04
 Nodes (44): Advanced Features, After PRD Completion, Before Writing the PRD, Best Practices Summary, Common PRD Scenarios, Core Workflow, During PRD Creation, Example 1: Mobile Feature PRD (+36 more)
 
 ### Community 62 - "install_hook_command"
-Cohesion: 0.12
-Nodes (17): install_hook_command(), _matches_legacy_script(), Return True if ``command`` invokes a legacy script superseded by ``subcommand``., Register a hook subcommand in the harness's hooks config. Target ``"claude"``…, Remove a hook subcommand registration from the harness's hooks config. Inverse…, uninstall_hook_command(), fixture, MonkeyPatch (+9 more)
+Cohesion: 0.09
+Nodes (25): install_hook_command(), _matches_legacy_script(), Return True if ``command`` invokes a legacy script superseded by ``subcommand``., Register a hook subcommand in the harness's hooks config. Target ``"claude"``…, Remove a hook subcommand registration from the harness's hooks config. Inverse…, uninstall_hook_command(), MonkeyPatch, Path (+17 more)
 
 ### Community 63 - "How to install"
 Cohesion: 0.03
@@ -2654,16 +2674,16 @@ Cohesion: 0.04
 Nodes (56): 문제 해결, 설치, 설치, 설치, 설치, 설치, 설치, 설치 (+48 more)
 
 ### Community 69 - "Path"
-Cohesion: 0.12
-Nodes (15): _detect_framework(), _detect_pkg_manager(), detect_project(), _detect_services_node(), Path, Detect service-like scripts from ``package.json``., Detect project type, package manager, and available services., Detect the Node.js package manager from lock files. (+7 more)
+Cohesion: 0.11
+Nodes (19): _detect_pkg_manager(), detect_project(), _detect_services_node(), _detect_services_nx(), Path, Detect service-like scripts from ``package.json``., Detect services from Nx workspace ``project.json`` files., Detect project type, package manager, and available services. (+11 more)
 
 ### Community 70 - "Skill Authoring"
 Cohesion: 0.05
 Nodes (41): Command to check the issue, Content Quality Checklist, Creating a Rubric, Directory Anatomy, Directory Structure, Final Review, Metadata Checklist, Minimal SKILL.md Template (+33 more)
 
 ### Community 71 - "Skill Title"
-Cohesion: 0.11
-Nodes (19): Advanced Pattern 1: [Complex Scenario], Advanced Pattern 2: [Edge Cases], Advanced Usage, Author Contact, Common Patterns, Common Pitfalls, Integrating with [Related Technology 1], Integrating with [Related Technology 2] (+11 more)
+Cohesion: 0.05
+Nodes (41): Advanced Pattern 1: [Complex Scenario], Advanced Pattern 2: [Edge Cases], Advanced Usage, Author Contact, Best Practices Summary, Common Patterns, Common Pitfalls, Concept 1: Foundation (+33 more)
 
 ### Community 72 - "Dataset Curator"
 Cohesion: 0.05
@@ -2671,7 +2691,7 @@ Nodes (39): Best Practices, Common Mistakes, Dataset Curator, Example 1: Text Cl
 
 ### Community 73 - "GGUF Format and Quantization Guide"
 Cohesion: 0.05
-Nodes (37): 1. GGUF Format Overview, 2. Quantization Types -- Complete Reference, 3. Recommended Quantization Choice, 5. Converting Models to GGUF, 6. Model Sources, 7. Importance Matrix (imatrix) Generation, 8. Mixed-Precision and Per-Layer Quantization, 9. Hardware Requirements by Model Size (+29 more)
+Nodes (42): 10. Supported Model Architectures, 1. GGUF Format Overview, 2. Quantization Types -- Complete Reference, 3. Recommended Quantization Choice, 5. Converting Models to GGUF, 6. Model Sources, 7. Importance Matrix (imatrix) Generation, 8. Mixed-Precision and Per-Layer Quantization (+34 more)
 
 ### Community 74 - "slide_search_core.py"
 Cohesion: 0.09
@@ -2725,9 +2745,9 @@ Nodes (43): Ubiquitous language, Deepening opportunities, Deepening Guide, In-pr
 Cohesion: 0.07
 Nodes (18): NotificationType, Any, Format a single notification. Args: notif: Notification dictionary Returns:…, Check if there are active notifications. Returns: True if there are active…, Clear all notifications., Get count of active notifications. Returns: Number of active notifications, Temporary notification system., Set the status message. Args: message: Status message message_type: Type of… (+10 more)
 
-### Community 87 - "core/skills.py"
-Cohesion: 0.07
-Nodes (37): activate_skills_by_category(), deactivate_skills_by_category(), load_skills_registry(), Any, Path, Skill management functions., Validate skill metadata against required schema., Rebuild skills/skill-index.json from SKILL.md front matter. Resolves the skills… (+29 more)
+### Community 87 - "load_skills_registry"
+Cohesion: 0.12
+Nodes (19): activate_skills_by_category(), deactivate_skills_by_category(), load_skills_registry(), Any, Load ``skills/registry.yaml`` as a dict ({} on any failure)., Build a ``{skill_slug: [category, ...]}`` map from a loaded registry. A skill…, Activate every skill whose registry categories include ``category``. Mirrors…, Deactivate every skill whose registry categories include ``category``. (+11 more)
 
 ### Community 88 - "Cortex Competitive Analysis"
 Cohesion: 0.05
@@ -2750,8 +2770,8 @@ Cohesion: 0.05
 Nodes (39): Accessibility, After Every Task, Animation, Avoid, Cognitive Principles, Color Lives Somewhere, Color System, Communication (+31 more)
 
 ### Community 93 - "Container"
-Cohesion: 0.03
-Nodes (43): Container, DiffViewerDialog, ComposeResult, Dialog for viewing diff between source and installed asset., Colorize diff output for display., Escape Rich markup characters., Keep installed version., BulkSkillOperationDialog (+35 more)
+Cohesion: 0.02
+Nodes (45): Container, ComposeResult, ComposeResult, ConfirmDialog, ErrorDialog, _generate_view_shortcuts_help(), HelpDialog, InfoDialog (+37 more)
 
 ### Community 94 - "Agent Trigger System"
 Cohesion: 0.05
@@ -2843,12 +2863,12 @@ Cohesion: 0.07
 Nodes (25): Block, essay, further, inline(), lines, parseBlocks(), readEssay(), readFurther() (+17 more)
 
 ### Community 114 - "write_manifest"
-Cohesion: 0.12
-Nodes (43): _handle_project_command(), Re-runnable skill curation: pick → replace manifest → reconcile. Shared by…, Handle ``cortex project`` subcommands., _run_curate(), ensure_cortex_gitignore(), load_manifest(), Any, Path (+35 more)
+Cohesion: 0.13
+Nodes (41): _handle_project_command(), Re-runnable skill curation: pick → replace manifest → reconcile. Shared by…, Handle ``cortex project`` subcommands., _run_curate(), ensure_cortex_gitignore(), load_manifest(), Any, Path (+33 more)
 
-### Community 115 - "notes.py"
-Cohesion: 0.12
-Nodes (29): ensure_vault_structure(), Ensure the vault directory structure exists. Creates: vault/ ├── knowledge/ ├──…, create_note(), create_session_note(), delete_note(), _extract_note_info(), get_note_path(), get_session_note_path() (+21 more)
+### Community 115 - "get_vault_path"
+Cohesion: 0.08
+Nodes (44): get_vault_stats(), memory_capture(), memory_fix(), memory_project(), Any, Capture or update project context. Args: name: Project name path: Repository…, Capture session summary. Args: title: Session title summary: What we worked on…, Record a bug fix. Args: title: Issue title problem: What was broken/wrong… (+36 more)
 
 ### Community 116 - "tmux/__init__.py"
 Cohesion: 0.10
@@ -2911,12 +2931,12 @@ Cohesion: 0.10
 Nodes (35): EAS Simulator Codex Trigger Metadata, agent-device Client/Daemon Model, Argent MCP Server Config, argent reinstall-app Tool, argent Screen Recording (trimStatic Gotcha), Controllers Reference (agent-device & argent), Screenshot Resolution/Token Tradeoff, Bounded Readiness Poll Loop (+27 more)
 
 ### Community 131 - "Any"
-Cohesion: 0.08
-Nodes (20): ndarray, LLMIntelligence, ModelSelector, Any, Calculate actual API cost for a request. Args: model: Model name input_tokens:…, Lazy load the embedding model only when needed., Record a successful session for future semantic matching. Args: session_data:…, Find semantically similar past sessions. Args: current_context: Current session… (+12 more)
+Cohesion: 0.09
+Nodes (20): ndarray, LLMIntelligence, ModelSelector, Any, Semantic similarity matching using embeddings for intelligent recommendations.…, Calculate actual API cost for a request. Args: model: Model name input_tokens:…, Record a successful session for future semantic matching. Args: session_data:…, Find semantically similar past sessions. Args: current_context: Current session… (+12 more)
 
 ### Community 132 - "MemoryNoteCreateDialog"
-Cohesion: 0.12
-Nodes (9): get_vault_stats(), Any, Get statistics about the memory vault. Returns: Dict with stats about each note…, MemoryNoteCreateDialog, Pressed, Dialog for creating a new memory note., Load notes from the memory vault., Switch to memory view. (+1 more)
+Cohesion: 0.05
+Nodes (28): MemoryNoteCreateDialog, MemoryNoteDialog, Pressed, Dialog showing memory note content., Initialize memory note dialog. Args: note: The memory note metadata content:…, Request delete action., Dialog for creating a new memory note., Switch to memory view. (+20 more)
 
 ### Community 133 - "Intelligent Mode Switching Design"
 Cohesion: 0.06
@@ -2947,8 +2967,8 @@ Cohesion: 0.06
 Nodes (34): $type, $value, $type, $value, $type, $value, $type, $value (+26 more)
 
 ### Community 140 - "tui_supersaiyan.py"
-Cohesion: 0.11
-Nodes (15): Button, RichTable, create_rich_table(), generate_sparkline(), Super Saiyan enhanced TUI components for cortex. This module provides visually…, Enhanced DataTable with Super Saiyan styling. Features: - Color-coded status…, Add a row with formatted status indicators. Args: name: Item name status:…, Enhanced button with Super Saiyan styling. Features: - Smooth hover effects -… (+7 more)
+Cohesion: 0.08
+Nodes (21): Button, RichTable, create_rich_table(), generate_sparkline(), Any, Static, Super Saiyan enhanced TUI components for cortex. This module provides visually…, Trigger fade-in animation on mount. (+13 more)
 
 ### Community 141 - "Industrial Brutalist UI Skill"
 Cohesion: 0.08
@@ -2958,13 +2978,13 @@ Nodes (33): Brandkit Image Generation Skill, Anti-Generic Rules, Board Compositi
 Cohesion: 0.06
 Nodes (31): 10. Say the relation instead of implying it, 11. Take a position, and say where it is weak, 12. Write the way you would say it, 13. Do not perform, 14. Give the first sentence its one job, 15. Make each paragraph earn the next, 16. Stop where the thought stops, 17. Rewrite by cutting and reordering (+23 more)
 
-### Community 143 - "git/__init__.py"
-Cohesion: 0.10
-Nodes (38): Backward-compatibility shim. The canonical module is…, Git operations package for Cortex CLI. Provides safe, agent-friendly git…, Resolve the git repository root. Returns ``(root_path, None)`` on success or…, resolve_repo_root(), _build_worktree_info(), _ensure_gitignore_entry(), _get_configured_worktree_dir(), _git_branch_exists() (+30 more)
+### Community 143 - "worktree.py"
+Cohesion: 0.11
+Nodes (33): Backward-compatibility shim. The canonical module is…, _build_worktree_info(), _ensure_gitignore_entry(), _get_configured_worktree_dir(), _git_branch_exists(), _normalize_branch(), _parse_worktree_porcelain(), Path (+25 more)
 
 ### Community 144 - "memory/config.py"
-Cohesion: 0.11
-Nodes (29): memory_auto(), Toggle or check auto-capture state. Args: action: "on", "off", or "status"…, AutoCaptureConfig, _get_claude_dir(), get_config(), _get_config_path(), get_last_capture(), is_auto_capture_enabled() (+21 more)
+Cohesion: 0.10
+Nodes (30): memory_auto(), Toggle or check auto-capture state. Args: action: "on", "off", or "status"…, AutoCaptureConfig, _get_claude_dir(), get_config(), _get_config_path(), get_last_capture(), is_auto_capture_enabled() (+22 more)
 
 ### Community 145 - "run_tmux"
 Cohesion: 0.12
@@ -3019,8 +3039,8 @@ Cohesion: 0.11
 Nodes (30): build_git_parser(), Any, _SubParsersAction, Register the ``cortex git`` parser tree., build_tmux_parser(), Any, _SubParsersAction, Register the ``cortex tmux`` parser tree. (+22 more)
 
 ### Community 158 - "run_git"
-Cohesion: 0.11
-Nodes (22): Safe git push with protected-branch enforcement. Blocks ``--force`` on…, check_dirty_tree(), get_current_branch(), get_tracking_remote(), is_protected_branch(), Path, Shared git subprocess infrastructure. Provides the low-level helpers that all…, Run a git command and return ``(returncode, stdout, stderr)``. *cwd* defaults… (+14 more)
+Cohesion: 0.14
+Nodes (17): check_dirty_tree(), get_current_branch(), get_tracking_remote(), Path, Run a git command and return ``(returncode, stdout, stderr)``. *cwd* defaults…, Check for uncommitted changes. Returns ``(is_dirty, list_of_dirty_files)``., Return the current branch name, or ``None`` if detached / not in a repo., Return the remote name for *branch*'s tracking configuration, or ``None``. (+9 more)
 
 ### Community 159 - "4.2 TUI Layer"
 Cohesion: 0.29
@@ -3087,8 +3107,8 @@ Cohesion: 0.06
 Nodes (30): 1. Add Navigation Stack (Lines ~327), 1. Test Native Command Palette, 2. Test Navigation Stack, 2. Update Imports (Line ~138), 3. Test Cross-View Search, 3. Update `watch_current_view()` for Navigation Stack (Line ~500), 4. Add Navigation Helper Methods (New methods), 4. Test Recent Views (+22 more)
 
 ### Community 175 - "QA Baseline Report"
-Cohesion: 0.07
-Nodes (30): Appendix: Raw Test Output Summary, CI/CD Configuration Audit, Code Quality Issues, Conclusion, Coverage Summary (Top 20 Worst), Current CI Setup, Current Justfile Targets, Current Test Suite Structure (+22 more)
+Cohesion: 0.06
+Nodes (31): 1. SQLite Resource Warnings (14 instances), 2. Deprecated `datetime.utcnow()` (5 instances), 3. Pytest Unknown Markers (34 warnings), 4. Coverage Failure Gate, Appendix: Raw Test Output Summary, CI/CD Configuration Audit, Code Quality Issues, Conclusion (+23 more)
 
 ### Community 176 - "doc_audit.py"
 Cohesion: 0.11
@@ -3112,7 +3132,7 @@ Nodes (30): ♿ Accessibility (Non-negotiable), Accessibility Targets:, Auto-Det
 
 ### Community 181 - "llama.cpp Build and Integration Guide"
 Cohesion: 0.06
-Nodes (33): 10. Cross-Compilation Notes, 12. Directory Structure After Build, 1. Prerequisites, 2. Basic Build from Source, 4. All Key CMake Options, 8. Package Manager Installation, Android, Backend and hardware options (+25 more)
+Nodes (35): 10. Cross-Compilation Notes, 12. Directory Structure After Build, 1. Prerequisites, 3. GPU Backend Build Options, 4. All Key CMake Options, 8. Package Manager Installation, Android, Backend and hardware options (+27 more)
 
 ### Community 182 - "OpenCode Sub-Agent Protocol"
 Cohesion: 0.06
@@ -3163,8 +3183,8 @@ Cohesion: 0.07
 Nodes (29): Calibration Rules, Checkpoint Design, Checkpoint Principles, Checkpoint Template, Common Error Categories, Debug Challenge, Difficulty Calibration, Difficulty Levels (+21 more)
 
 ### Community 194 - "temp_dir"
-Cohesion: 0.10
-Nodes (26): Config, condense_xml(), main(), pack_document(), Strip unnecessary whitespace and remove comments., Pack a directory into an Office file (.docx/.pptx/.xlsx). Args: input_dir: Path…, Validate document by converting to HTML with soffice., validate_document() (+18 more)
+Cohesion: 0.06
+Nodes (36): Config, condense_xml(), main(), pack_document(), Strip unnecessary whitespace and remove comments., Pack a directory into an Office file (.docx/.pptx/.xlsx). Args: input_dir: Path…, Validate document by converting to HTML with soffice., validate_document() (+28 more)
 
 ### Community 195 - "Logo Usage Rules"
 Cohesion: 0.07
@@ -3174,9 +3194,9 @@ Nodes (28): Absolute Don'ts, Approved Backgrounds, Before Using Logo, Clear Spac
 Cohesion: 0.10
 Nodes (28): ADVERB_STOP, AI_PHRASES, AI_PHRASES_RE, AI_STRUCTURES, AI_TRANSITIONS, AI_TRANSITIONS_RE, AI_WORDS, AI_WORDS_RE (+20 more)
 
-### Community 197 - "stash.py"
+### Community 197 - "git_stash_drop"
 Cohesion: 0.14
-Nodes (17): git_stash_apply(), git_stash_drop(), git_stash_list(), git_stash_save(), Path, Safe git stash operations. Defaults to ``apply`` over ``pop`` (keeps the stash…, Stash current changes with an optional message., Apply stash entry at *index* (keeps the stash). (+9 more)
+Nodes (16): git_stash_apply(), git_stash_drop(), git_stash_list(), git_stash_save(), Path, Stash current changes with an optional message., Apply stash entry at *index* (keeps the stash)., List all stash entries. (+8 more)
 
 ### Community 198 - "安装方法"
 Cohesion: 0.04
@@ -3299,8 +3319,8 @@ Cohesion: 0.07
 Nodes (26): Advanced Track, Analogy, Beginner Track, Bloom's Taxonomy Applied to Code, Concept Prerequisite Mapping, Concrete-Representational-Abstract (CRA), ELI5 (Explain Like I'm 5), Example Prerequisite Chain (+18 more)
 
 ### Community 228 - "install-skill-from-github.py"
-Cohesion: 0.20
-Nodes (23): Args, _build_repo_ssh(), _build_repo_url(), _codex_home(), _copy_skill(), _default_dest(), _download_repo_zip(), _git_sparse_checkout() (+15 more)
+Cohesion: 0.16
+Nodes (24): Args, _build_repo_ssh(), _build_repo_url(), _codex_home(), _copy_skill(), _default_dest(), _download_repo_zip(), _git_sparse_checkout() (+16 more)
 
 ### Community 229 - "get_bounding_box_messages"
 Cohesion: 0.14
@@ -3331,8 +3351,8 @@ Cohesion: 0.07
 Nodes (26): 2D Pixel Art Game Asset Prompting, Aspect Ratios, Best Practices Summary, Camera and Lens, Character Sprite Formula, Color Grading, Composition and Style Transfer (with new references), Conversational Editing (without new references) (+18 more)
 
 ### Community 236 - "Integrating llama.cpp with Unreal Engine 5.x"
-Cohesion: 0.06
-Nodes (33): 1. Integration Options Overview, 3.1 Build llama.cpp as Static Library, 3.2 Create External Module in UE Plugin, 3.3 LlamaCpp.Build.cs, 3.4 Consumer Module Build.cs, 3.5 Wrapper Class Pattern, 3. Custom C++ Integration (Build llama.cpp as Static Library for UE), 4. HTTP Server Approach (Decoupled) (+25 more)
+Cohesion: 0.07
+Nodes (27): 1. Integration Options Overview, 2. Llama-Unreal Plugin (Recommended), 4. HTTP Server Approach (Decoupled), 5. Performance Considerations in UE, 7. Use Cases in Games, Advantages, Blueprint Usage, C++ Usage (+19 more)
 
 ### Community 237 - "Performance and Debugging -- Detailed Reference"
 Cohesion: 0.07
@@ -3351,12 +3371,12 @@ Cohesion: 0.11
 Nodes (35): _build_agent_parser(), _build_completions_parser(), _build_dev_parser(), _build_docs_parser(), _build_export_parser(), _build_hooks_parser(), _build_install_parser(), _build_mcp_parser() (+27 more)
 
 ### Community 241 - "check_atomicity"
-Cohesion: 0.12
-Nodes (11): check_atomicity(), _extract_type(), Commit message validation and atomicity detection. All functions return lists…, Validate *msg* against Conventional Commits format. Returns a list of warning…, Extract the commit type from the subject line, or return empty string., Check whether a commit appears to bundle multiple logical changes. Returns a…, validate_commit_message(), unit (+3 more)
+Cohesion: 0.13
+Nodes (10): check_atomicity(), _extract_type(), Validate *msg* against Conventional Commits format. Returns a list of warning…, Extract the commit type from the subject line, or return empty string., Check whether a commit appears to bundle multiple logical changes. Returns a…, validate_commit_message(), unit, Unit tests for claude_ctx_py.git.validate. (+2 more)
 
-### Community 242 - "compute_project_signature"
-Cohesion: 0.18
-Nodes (13): compute_project_signature(), Path, Project signature detection for filtering skills by domain relevance. Walks a…, Walk ``cwd`` and produce a ``ProjectSignature``. Skips well-known noisy…, ``os.walk``-equivalent that prunes ignored directories in place., _walk_filtered(), Path, Unit tests for claude_ctx_py.intelligence.project_signature. (+5 more)
+### Community 242 - "ProjectSignature"
+Cohesion: 0.09
+Nodes (22): compute_project_signature(), ProjectSignature, Path, Project signature detection for filtering skills by domain relevance. Walks a…, Frozen filesystem-level signature of a project. Attributes: cwd: Resolved root…, Return ``True`` if the project plausibly contains ``pattern`` matches. The…, Return ``True`` if at least one pattern intersects the signature. An empty…, Walk ``cwd`` and produce a ``ProjectSignature``. Skips well-known noisy… (+14 more)
 
 ### Community 243 - "tmux_rename"
 Cohesion: 0.14
@@ -3407,8 +3427,8 @@ Cohesion: 0.07
 Nodes (26): A/B Testing, Affinity Mapping, Bias Avoidance Checklist, Confidence Levels, Contextual Inquiry, Diary Studies, Evidence Triangulation, Interview Techniques (+18 more)
 
 ### Community 255 - "Modern UE5 Systems -- Detailed Reference"
-Cohesion: 0.05
-Nodes (39): AI, ANIMATION, ASSET LOADING, AUDIO, Audio Modulation Plugin, Chooser Tables, CommonConversation (CommonConversationRuntime), CommonUI (+31 more)
+Cohesion: 0.07
+Nodes (29): AI, ANIMATION, ASSET LOADING, AUDIO, Audio Modulation Plugin, Chooser Tables, CommonConversation (CommonConversationRuntime), CommonUI (+21 more)
 
 ### Community 256 - "Logo AI Prompt Engineering"
 Cohesion: 0.08
@@ -3422,9 +3442,9 @@ Nodes (26): Executing Plans Skill, Step 1: Load and Review Plan, Stop and Ask Pr
 Cohesion: 0.12
 Nodes (13): FileSelected, DocsBrowserApp, Documentation browser TUI application., Handle file selection in the tree., Load and display a markdown file., Handle key events — intercept escape when search input is focused., Focus the search input., Focus the markdown viewer for keyboard scrolling. (+5 more)
 
-### Community 259 - "DocxXMLEditor"
-Cohesion: 0.05
-Nodes (28): range, DocxXMLEditor, Ensure w14 namespace is declared on the root element., Inject RSID, author, and date attributes into DOM nodes where applicable. Adds…, Replace node with automatic attribute injection., Reject an insertion by wrapping its content in a deletion. Wraps all runs…, Reject a deletion by re-inserting the deleted content. Creates w:ins elements…, Transform paragraph XML to add tracked change wrapping for insertion. Wraps… (+20 more)
+### Community 259 - "XMLEditor"
+Cohesion: 0.09
+Nodes (17): range, _generate_rsid(), Generate random 8-character hex RSID., _create_line_tracking_parser(), Recursively extract all text content from an element. Skips text nodes that…, Replace a DOM element with new XML content. Args: elem:…, Insert XML content after a DOM element. Args: elem: defusedxml.minidom.Element…, Insert XML content before a DOM element. Args: elem: defusedxml.minidom.Element… (+9 more)
 
 ### Community 260 - "Color Palette Management"
 Cohesion: 0.08
@@ -3434,9 +3454,9 @@ Nodes (24): Accessibility Requirements, Brand Compliance Validation, Checking Co
 Cohesion: 0.08
 Nodes (24): API References, Best Practices, Code Examples, Configuration Guides, Content Organization, Core Capabilities, Documentation Elements, Documentation Structure (+16 more)
 
-### Community 262 - "_log_hook"
-Cohesion: 0.06
-Nodes (56): NamedTuple, candidate_index_paths(), detected_delegation_signals(), _glob_match_any(), load_entries(), main(), match_entries(), Any (+48 more)
+### Community 262 - "agent_suggest.py"
+Cohesion: 0.22
+Nodes (14): candidate_index_paths(), detected_delegation_signals(), _glob_match_any(), load_entries(), main(), match_entries(), Any, Path (+6 more)
 
 ### Community 263 - "TUI Fixes Applied"
 Cohesion: 0.08
@@ -3527,8 +3547,8 @@ Cohesion: 0.08
 Nodes (23): DOM, DOM.Iterable, ES2020, src, vite-env.d.ts, compilerOptions, allowImportingTsExtensions, isolatedModules (+15 more)
 
 ### Community 285 - "test_statusline_cost.py"
-Cohesion: 0.08
-Nodes (42): _fmt_tokens(), format_default(), format_json(), format_oneline(), _format_reset_time(), _metered_billing(), _rate_color(), Compact token count: 500, 1.2k, 50k, 1.5M. (+34 more)
+Cohesion: 0.15
+Nodes (23): format_oneline(), _metered_billing(), True when an API key or cloud backend is driving per-token billing. Claude…, Resolve cost-segment visibility from the ``show_cost`` config setting.…, Single line for tmux/i3bar., _should_show_cost(), _clear_billing_env(), config() (+15 more)
 
 ### Community 286 - "i-have-adhd.ts"
 Cohesion: 0.13
@@ -3599,8 +3619,8 @@ Cohesion: 0.12
 Nodes (22): _extract_file_paths(), _extract_findings(), _extract_perspectives(), _extract_verdict(), _find_file_near(), _find_severity_near(), ingest_review(), parse_review() (+14 more)
 
 ### Community 303 - "test_tmux_justfile.py"
-Cohesion: 0.10
-Nodes (18): _detect_services_nx(), Generate Justfile service targets wrapping ``cortex tmux``. Detects project…, Detect services from Nx workspace ``project.json`` files., Generate Justfile targets for tmux service management. Returns ``(exit_code,…, A long-running service to run in a tmux window., Convert a script/project name to a tmux-safe window name., Build the idiomatic run command for *pkg_manager*., _run_cmd() (+10 more)
+Cohesion: 0.14
+Nodes (12): Generate Justfile service targets wrapping ``cortex tmux``. Detects project…, Generate Justfile targets for tmux service management. Returns ``(exit_code,…, Convert a script/project name to a tmux-safe window name., Build the idiomatic run command for *pkg_manager*., _run_cmd(), _safe_window_name(), tmux_justfile(), unit (+4 more)
 
 ### Community 304 - "Adapted Content & Derived Works"
 Cohesion: 0.09
@@ -3659,8 +3679,8 @@ Cohesion: 0.09
 Nodes (22): 1. Design Your Lighting, 2. Choose Camera, Lens, and Focus, 3. Define Color Grading and Film Stock, 4. Emphasize Materiality and Texture, Aspect Ratios, Best Practices Summary, Composition and Style Transfer (with new references), Conversational Editing (without new references) (+14 more)
 
 ### Community 318 - "C++ and Blueprint Best Practices -- Detailed Reference"
-Cohesion: 0.09
-Nodes (23): 1. Blueprint Interfaces (Preferred), 2. Event Dispatchers (Delegates), 3. Direct References / Casting, 4. GameplayMessageSubsystem (Modern Alternative), Avoiding Hard References, Blueprint Communication Patterns, Blueprint Nativization:, C++ and Blueprint Best Practices -- Detailed Reference (+15 more)
+Cohesion: 0.07
+Nodes (29): 1. Blueprint Interfaces (Preferred), 1. Eliminate Event Tick, 2. Disable Tick on Components and Actors, 2. Event Dispatchers (Delegates), 3. Cache References, 3. Direct References / Casting, 4. GameplayMessageSubsystem (Modern Alternative), 4. Minimize Blueprint Node Count in Hot Paths (+21 more)
 
 ### Community 319 - "Data-Driven Design -- Detailed Reference"
 Cohesion: 0.12
@@ -3675,8 +3695,8 @@ Cohesion: 0.09
 Nodes (22): Best Practices, Chart.js Integration, Command, Component Spec Pattern, Contextual Decision Flow, Decision System CSVs, Design System, Integration (+14 more)
 
 ### Community 322 - "radius"
-Cohesion: 0.11
-Nodes (27): $type, $value, lg, sm, $type, $value, $type, $value (+19 more)
+Cohesion: 0.12
+Nodes (23): $type, $value, sm, $type, $value, $type, $value, $type (+15 more)
 
 ### Community 323 - "DESIGN.md Artifact"
 Cohesion: 0.11
@@ -3703,12 +3723,12 @@ Cohesion: 0.09
 Nodes (21): Auto-Activation Integration, Book Knowledge Domains, Clean Code (Robert C. Martin), Core Principles, Discovery Validation Points, Framework Integration Points, GoF Design Patterns, Integration with SuperClaude Framework (+13 more)
 
 ### Community 329 - "DOCXSchemaValidator"
-Cohesion: 0.16
-Nodes (10): DOCXSchemaValidator, BaseSchemaValidator, Validate that w:t elements are not within w:del elements. For some reason, XSD…, Validator for Word document XML files against XSD schemas., Count the number of paragraphs in the unpacked document., Count the number of paragraphs in the original docx file., Validate that w:delText elements are not within w:ins elements. w:delText is…, Run all validation checks and return True if all pass. (+2 more)
+Cohesion: 0.07
+Nodes (22): Base validator with common validation logic for document files., DOCXSchemaValidator, BaseSchemaValidator, Validator for Word document XML files against XSD schemas., Validate that w:t elements are not within w:del elements. For some reason, XSD…, Validator for Word document XML files against XSD schemas., Count the number of paragraphs in the unpacked document., Count the number of paragraphs in the original docx file. (+14 more)
 
 ### Community 330 - "statusline.py"
-Cohesion: 0.07
-Nodes (54): add_statusline_arguments(), _apply_cli_overrides(), _build_status_data(), C, _cache_key(), _cache_read(), _cache_write(), _configure_colors() (+46 more)
+Cohesion: 0.16
+Nodes (20): add_statusline_arguments(), _apply_cli_overrides(), C, _configure_colors(), _get_icons(), load_config(), main(), parse_args() (+12 more)
 
 ### Community 331 - "generate_justfile"
 Cohesion: 0.22
@@ -3779,8 +3799,8 @@ Cohesion: 0.13
 Nodes (20): SkillInfo, create_community_skills_table(), create_skills_details_panel(), create_skills_metrics_panel(), create_skills_table(), get_filtered_skills(), handle_skills_key(), Panel (+12 more)
 
 ### Community 348 - "CommandPalette"
-Cohesion: 0.08
-Nodes (16): CommandPalette, Changed, ComposeResult, Submitted, Handle search input changes., Handle Enter key pressed in input field., Fuzzy match scoring algorithm. Args: query: Search query text: Text to match…, Universal command palette with fuzzy search. Press Ctrl+P to open, type to… (+8 more)
+Cohesion: 0.03
+Nodes (54): CommandTuple, CommandPalette, CommandRegistry, Changed, ComposeResult, Submitted, Handle search input changes., Handle Enter key pressed in input field. (+46 more)
 
 ### Community 349 - "MCPBrowseDialog"
 Cohesion: 0.13
@@ -3874,13 +3894,13 @@ Nodes (20): Animation and Motion, breathe-glow (AI Pulse), Dropdown, Duration Sc
 Cohesion: 0.17
 Nodes (13): HTMLParser, _classify_anchors(), extract_signals(), _gather_paths(), main(), Any, Path, Pull commonly-checked meta tags into a flat summary. (+5 more)
 
-### Community 372 - "AdaptiveFooter"
-Cohesion: 0.14
-Nodes (13): AdaptiveFooter, _generate_view_nav_shortcut(), Adaptive footer that switches between responsive and compact modes.…, Format a single shortcut., Get view-specific shortcuts as (key, label) tuples., Render the adaptive footer with multi-line support on small screens., Render footer in multiple rows for better space usage., Generate view navigation shortcut string from PRIMARY_VIEW_BINDINGS. Returns:… (+5 more)
+### Community 372 - "Text"
+Cohesion: 0.16
+Nodes (12): RenderableType, _generate_view_nav_shortcut(), Render ultra-compact footer., Format a single shortcut., Get view-specific shortcuts as (key, label) tuples., Render the adaptive footer with multi-line support on small screens., Render footer in multiple rows for better space usage., Generate view navigation shortcut string from PRIMARY_VIEW_BINDINGS. Returns:… (+4 more)
 
-### Community 373 - "consult_llm.py"
-Cohesion: 0.25
-Nodes (17): _augment_prompt(), _build_system_prompt(), _call_gemini(), _call_openai_like(), _get_api_key(), _get_base_url(), _get_model(), _load_prompt() (+9 more)
+### Community 373 - "main.py"
+Cohesion: 0.04
+Nodes (69): Key, SkillProvider, Resolve the cortex package root directory (where assets are bundled). This is…, _resolve_cortex_root(), _ensure_skill_symlink(), link_all_codex_skills(), link_all_provider_skills(), link_codex_skill() (+61 more)
 
 ### Community 374 - "EvaluationHarnessTest"
 Cohesion: 0.12
@@ -3899,12 +3919,12 @@ Cohesion: 0.13
 Nodes (17): configure_server(), install_and_configure(), install_from_registry(), install_package(), InstallResult, Configure an MCP server in Claude's config. Args: server: The server definition…, Install and configure an MCP server. This is the main entry point for…, Result of an installation attempt. (+9 more)
 
 ### Community 378 - "git_branch_create"
-Cohesion: 0.18
-Nodes (11): git_branch_create(), git_branch_switch(), Path, Safe git branch operations. ``switch`` refuses when the working tree is dirty.…, Create a new branch without switching to it. If *from_ref* is given the branch…, Switch to *name*. Refuses if the working tree has uncommitted changes., patch, unit (+3 more)
-
-### Community 379 - "get_vault_path"
 Cohesion: 0.20
-Nodes (20): _default_vault_path(), get_vault_path(), Path, Resolve the default vault location from the active cortex scope. - ``project``…, Get the resolved vault path. Checks, in order: 1. ``CORTEX_MEMORY_VAULT``…, _clean_vault_env(), fixture, MonkeyPatch (+12 more)
+Nodes (10): git_branch_create(), git_branch_switch(), Path, Create a new branch without switching to it. If *from_ref* is given the branch…, Switch to *name*. Refuses if the working tree has uncommitted changes., patch, unit, Unit tests for claude_ctx_py.git.branch. (+2 more)
+
+### Community 379 - "test_memory_config.py"
+Cohesion: 0.22
+Nodes (17): _default_vault_path(), Resolve the default vault location from the active cortex scope. - ``project``…, _clean_vault_env(), fixture, MonkeyPatch, Path, unit, Unit tests for memory/config.py — scope-aware vault path resolution. (+9 more)
 
 ### Community 380 - "tmux_snapshot"
 Cohesion: 0.15
@@ -3919,8 +3939,8 @@ Cohesion: 0.11
 Nodes (18): Accessibility, Animation Toolkit, Banned Patterns, Components, Design Tokens, FadeIn — mount animation, HoverCard — interactive hover, Loading States (+10 more)
 
 ### Community 383 - "RuntimeError"
-Cohesion: 0.19
-Nodes (14): RuntimeError, is_server_ready(), main(), Wait for server to be ready by polling the port., build_isolated_env(), latest_enabled(), main(), message_count() (+6 more)
+Cohesion: 0.06
+Nodes (54): RuntimeError, _augment_prompt(), _build_system_prompt(), _call_gemini(), _call_openai_like(), _get_api_key(), _get_base_url(), _get_model() (+46 more)
 
 ### Community 384 - "Phase 3 Quality Gate Report"
 Cohesion: 0.10
@@ -4051,11 +4071,11 @@ Cohesion: 0.13
 Nodes (12): Data structure for shape properties extracted from a PowerPoint shape., Convert EMUs (English Metric Units) to inches., Convert inches to pixels at given DPI., Get the font file path for a given font name. Args: font_name: Name of the font…, Initialize from a PowerPoint shape object. Args: shape: The PowerPoint shape…, Get usable width and height in pixels after accounting for margins., Wrap a single line of text to fit within max_width_px., Estimate if text overflows the shape bounds using PIL text measurement. (+4 more)
 
 ### Community 416 - "process_asset.py"
-Cohesion: 0.18
-Nodes (18): Image, _cleanup_fringe(), crop_to_content(), main(), parse_size(), rasterize(), Remove background using ToonOut (BiRefNet fine-tuned on anime/illustration).…, Crop image to bounding box of non-transparent content. (+10 more)
+Cohesion: 0.16
+Nodes (19): Image, Lazy load the embedding model only when needed., _cleanup_fringe(), crop_to_content(), main(), parse_size(), rasterize(), Remove background using ToonOut (BiRefNet fine-tuned on anime/illustration).… (+11 more)
 
 ### Community 417 - "MemoryScreen"
-Cohesion: 0.13
+Cohesion: 0.14
 Nodes (11): on, RowSelected, MemoryScreen, Changed, Initialize the screen., Load notes into the table., Get icon for note type., Handle note selection. (+3 more)
 
 ### Community 418 - "Asset Organization Guide"
@@ -4218,17 +4238,17 @@ Nodes (17): Audit Frequency, Brand Consistency Checklist, Channel Audit, Collate
 Cohesion: 0.14
 Nodes (18): Changeset: ask-matt wayfinder guidance, Changeset: wayfinder decision tickets, Changeset: wayfinder research subagents, CONTEXT.md (ubiquitous language glossary), Decision ticket, Issue, Issue tracker, Triage role (+10 more)
 
-### Community 458 - "ProjectSignature"
-Cohesion: 0.15
-Nodes (9): ProjectSignature, Frozen filesystem-level signature of a project. Attributes: cwd: Resolved root…, Return ``True`` if the project plausibly contains ``pattern`` matches. The…, Return ``True`` if at least one pattern intersects the signature. An empty…, fixture, ProjectSignature.matches_any aggregation behavior., Pattern-classification ladder for ProjectSignature.matches_pattern., TestMatchesAny (+1 more)
+### Community 458 - "MCPServerInfo"
+Cohesion: 0.10
+Nodes (18): MCPServerInfo, Any, Information about an MCP server configuration. Attributes: name: Server…, Convert to dictionary representation., MCPViewMixin, Any, Panel, Render detailed view of selected MCP server. (+10 more)
 
 ### Community 459 - "output.py"
 Cohesion: 0.12
 Nodes (20): Tmux output capture and monitoring: read, dump, status, running, wait, watch., Wait for a command in *window* to complete (return to prompt). Polls every…, Wait for *pattern* to appear in *window* output, or for a prompt. If *pattern*…, Capture the last *lines* lines from *window*., Dump the entire scrollback buffer from *window*., Show window name and last few lines of output., Check if a command appears to be running in *window*. Returns ``(0,…, tmux_dump() (+12 more)
 
 ### Community 460 - "ResponsiveFooter"
-Cohesion: 0.11
-Nodes (15): RenderableType, A responsive footer that adapts to terminal width. Shows shortcuts in priority…, Format a single shortcut for display., Get all applicable shortcuts for a view, sorted by priority., Definition of a keyboard shortcut., Calculate the display width of a shortcut., Render the footer with responsive shortcut display., Update the current view context. (+7 more)
+Cohesion: 0.16
+Nodes (10): A responsive footer that adapts to terminal width. Shows shortcuts in priority…, Format a single shortcut for display., Get all applicable shortcuts for a view, sorted by priority., Definition of a keyboard shortcut., Calculate the display width of a shortcut., Render the footer with responsive shortcut display., Update the current view context., React to view changes. (+2 more)
 
 ### Community 461 - "AI Intelligence Features"
 Cohesion: 0.11
@@ -4302,9 +4322,9 @@ Nodes (17): A - Affected Users, D - Damage Potential, D - Discoverability, DREAD
 Cohesion: 0.11
 Nodes (17): 1. Identify Pattern Need, 2. Load Reference, 3. Implement Pattern, 4. Validate, 5. Document, Common Mistakes to Avoid, Core Concepts, Discriminated Union (+9 more)
 
-### Community 479 - "TestCommandPaletteFiltering"
-Cohesion: 0.12
-Nodes (13): unit, Tests for command filtering in CommandPalette., Set up test fixtures with multiple commands., Test that empty query returns all commands., Test that query filters commands by fuzzy match., Test that filtered commands are sorted by match score., Test behavior when query matches no commands., Test CommandPalette initialization. (+5 more)
+### Community 479 - "git/__init__.py"
+Cohesion: 0.17
+Nodes (13): Safe git branch operations. ``switch`` refuses when the working tree is dirty.…, _emit_warnings(), _normalize_path(), Whole-file atomic stage-and-commit. Ports the safe commit workflow from…, Strip leading ``./`` for comparison with ``git diff --name-only``., Git operations package for Cortex CLI. Provides safe, agent-friendly git…, Hunk-level atomic stage-and-commit via diff application. Ports the ``--patch``…, Safe git push with protected-branch enforcement. Blocks ``--force`` on… (+5 more)
 
 ### Community 480 - "llama.cpp -- C/C++ LLM Inference Framework Guide"
 Cohesion: 0.11
@@ -4546,9 +4566,9 @@ Nodes (11): analyzeClarity(), CLAUDE_CLUSTER_RE, CLAUDE_CLUSTER_TERMS, claudeClu
 Cohesion: 0.12
 Nodes (15): Closing Section, Code Examples, Common Tutorial Formats, Content Elements, Core Expertise, Exercise Types, Explanations, Opening Section (+7 more)
 
-### Community 540 - ".compose"
-Cohesion: 0.11
-Nodes (12): ComposeResult, Create child widgets., Any, Static, Trigger fade-in animation on mount., Beautiful metric card with smooth animations and rich styling. Features: -…, Live-updating status bar with neon waveform feedback., Push new info into the status bar. (+4 more)
+### Community 540 - "_get_git_info_uncached"
+Cohesion: 0.15
+Nodes (18): _cache_key(), _cache_read(), _cache_write(), format_time_ago(), get_claude_version(), get_git_info(), _get_git_info_uncached(), get_git_state() (+10 more)
 
 ### Community 541 - "4.1 CLI Layer"
 Cohesion: 0.33
@@ -4559,8 +4579,8 @@ Cohesion: 0.12
 Nodes (15): Created Files, Export View, Export View (View #9), Files Created/Modified, Init Wizard, Init Wizard (accessible via 'i'), Key Features, Keyboard Controls (+7 more)
 
 ### Community 543 - "Cortex - Documentation Index"
-Cohesion: 0.03
-Nodes (62): 0.1.0 (2025-10-17), 1.2.0 (2025-12-21), 1. Command System, 2.0.0 (2026-01-08), 2. Agent System, 3. Rule System, 4. Python CLI, Adding Commands (+54 more)
+Cohesion: 0.12
+Nodes (16): 📦 Asset Manager {#asset-manager}, Cortex - Documentation Index, Data Directory Overrides, Deep Dive Documentation, ℹ AI-Powered Skills & Rating System {#skills-intelligence}, Installation, Key Capabilities, ▶ Presentation Decks {#presentations} (+8 more)
 
 ### Community 544 - "properties"
 Cohesion: 0.17
@@ -4684,7 +4704,7 @@ Nodes (15): download_image(), extract_chat_data(), extract_curriculum(), extract
 
 ### Community 574 - "llama.cpp C/C++ API Reference"
 Cohesion: 0.12
-Nodes (16): 11. Chat Templates, 12. Memory / KV Cache Management, 15. Quantization, 16. C++ RAII Wrappers (llama-cpp.h), 4. Backend Initialization, 8. Batch and Decoding, Appendix: Logging, Appendix: Model Split Utilities (+8 more)
+Nodes (16): 12. Memory / KV Cache Management, 15. Quantization, 16. C++ RAII Wrappers (llama-cpp.h), 4. Backend Initialization, 8. Batch and Decoding, 9. Output Access, Appendix: Logging, Appendix: Model Split Utilities (+8 more)
 
 ### Community 575 - "Built-in Samplers"
 Cohesion: 0.12
@@ -4702,17 +4722,17 @@ Nodes (15): main(), Run opencode and return (text_output, tokens, cost, duration
 Cohesion: 0.12
 Nodes (16): Attribute Design Patterns, Costs & Cooldowns, Dynamic GEs, Effect Duration Types, ExecCalc, Gameplay Effects & Attributes -- Detailed Reference, GameplayEffectContext, GameplayEffectSpec (+8 more)
 
-### Community 579 - "fetch_and_summarize.py"
-Cohesion: 0.21
-Nodes (16): download_video(), ensure_package(), extract_urls_from_text(), get_video_info(), load_urls(), main(), process_url(), Path (+8 more)
+### Community 579 - "_build_status_data"
+Cohesion: 0.14
+Nodes (16): _build_status_data(), get_aws_info(), get_docker_context(), get_kube_context(), get_node_version(), get_venv_info(), ms_to_hhmmss(), Any (+8 more)
 
 ### Community 580 - "Design Principles"
 Cohesion: 0.12
 Nodes (15): 22 Art Direction Styles, Banner Sizes & Art Direction Styles Reference, Complete Banner Sizes, CTA Rules, Design Principles, Pinterest Research Queries, Print, Print Specs (+7 more)
 
-### Community 581 - "RedliningValidator"
-Cohesion: 0.21
-Nodes (7): Generate detailed word-level differences using git word diff., Validator for tracked changes in Word documents., Generate word diff using git with character-level precision., Remove tracked changes authored by Claude from the XML root., Main validation method that returns True if valid, False otherwise., Extract text content from Word XML, preserving paragraph structure. Empty…, RedliningValidator
+### Community 581 - "slash_commands.py"
+Cohesion: 0.22
+Nodes (14): _clean_text(), _derive_command_from_path(), _parse_skill_command(), Path, Utilities for discovering slash command metadata from skills., Derive namespace and slug from skill path. Examples: skills/foo/SKILL.md →…, Convert text to a slug suitable for commands., Clean description text. (+6 more)
 
 ### Community 582 - "icon/generate.py"
 Cohesion: 0.20
@@ -4762,21 +4782,21 @@ Nodes (14): Author, Blog Post — Website, Comments, Content, Date posted, Items
 Cohesion: 0.12
 Nodes (16): Before Completing Any Task, Common Patterns, Deliverables, Example Output, Expertise Areas, Implementation Notes, Implementation Notes, Metaprompting (Prompt Optimization) (+8 more)
 
-### Community 595 - "IntelligentAgent"
-Cohesion: 0.17
-Nodes (9): IntelligentAgent, Get comprehensive smart suggestions. Returns: Dictionary with all suggestions, Main intelligent automation agent that orchestrates everything., Analyze current context. Args: files: Optional list of files (auto-detect from…, Get intelligent recommendations for current context. Returns: List of…, Get list of agents that should be auto-activated. Returns: List of agent names…, Mark an agent as auto-activated. Args: agent_name: Agent that was activated, Get recommendations for agents that should be deactivated. Args: active_agents:… (+1 more)
+### Community 595 - "hooks/__init__.py"
+Cohesion: 0.21
+Nodes (13): HookTarget, _codex_hooks_config_path(), HookMeta, _load_target_config(), Any, Path, TypedDict, In-process hook implementations exposed via ``cortex hooks <name>``. Each hook… (+5 more)
 
-### Community 596 - "DOCXSchemaValidator"
-Cohesion: 0.14
-Nodes (10): DOCXSchemaValidator, BaseSchemaValidator, Validate that w:t elements are not within w:del elements. For some reason, XSD…, Validator for Word document XML files against XSD schemas., Count the number of paragraphs in the unpacked document., Count the number of paragraphs in the original docx file., Validate that w:delText elements are not within w:ins elements. w:delText is…, Run all validation checks and return True if all pass. (+2 more)
+### Community 596 - "format_default"
+Cohesion: 0.16
+Nodes (14): _fmt_tokens(), format_default(), _format_reset_time(), _rate_color(), Compact token count: 500, 1.2k, 50k, 1.5M., Shorten path for display., Default multi-line format., Color rate-limit remaining: green high, yellow mid, red low. (+6 more)
 
 ### Community 597 - "Rules"
 Cohesion: 0.12
 Nodes (16): 10. No preamble, no recap, no closing pleasantries, 1. Lead with the next action, 2. Number multi-step tasks, 3. End with one concrete next action, 4. Suppress tangents, 5. Restate state every turn, 6. Give specific time estimates, 7. Make completed work visible (+8 more)
 
 ### Community 598 - "4. Core Subsystems"
-Cohesion: 0.15
-Nodes (13): 4.10 Data Layer, 4.3 Intelligence System, 4.7 MCP Integration, 4. Core Subsystems, Auto-Activation Logic, CLAUDE.md Format, Core Components, Curated Documentation (+5 more)
+Cohesion: 0.13
+Nodes (15): 4.10 Data Layer, 4.3 Intelligence System, 4.9 Validation & Review System, 4. Core Subsystems, Architecture, Auto-Activation Logic, Benefits, CLAUDE.md Format (+7 more)
 
 ### Community 599 - "Cortex TUI - Visual Implementation Analysis"
 Cohesion: 0.13
@@ -4936,7 +4956,7 @@ Nodes (8): main(), Add custom font families. Args: fonts: Dict of font_type: [fo
 
 ### Community 638 - "TestShadcnInstaller"
 Cohesion: 0.11
-Nodes (10): Test adding components in dry run mode., Test ShadcnInstaller class., Test adding all components without config., Test adding all components in dry run mode., Test listing installed components without config., Test listing installed components when they exist., Test checking for existing shadcn config., Test checking for non-existent shadcn config. (+2 more)
+Nodes (10): Test ShadcnInstaller class., Test adding all components without config., Test adding all components in dry run mode., Test listing installed components when none exist., Test listing installed components when they exist., Test initialization with dry run mode., Test checking for existing shadcn config., Test getting installed components without config. (+2 more)
 
 ### Community 639 - "detect_domain"
 Cohesion: 0.23
@@ -5010,9 +5030,9 @@ Nodes (13): Analytical Approach, Asset Optimization, Background, Bundle Optimiza
 Cohesion: 0.14
 Nodes (13): Advanced Patterns, Analytical Approach, Background, Capabilities, Characteristic Questions, Domain Vocabulary, Example Interactions, Interaction Style (+5 more)
 
-### Community 657 - "RedliningValidator"
-Cohesion: 0.17
-Nodes (7): Generate detailed word-level differences using git word diff., Validator for tracked changes in Word documents., Generate word diff using git with character-level precision., Remove tracked changes authored by Claude from the XML root., Main validation method that returns True if valid, False otherwise., Extract text content from Word XML, preserving paragraph structure. Empty…, RedliningValidator
+### Community 657 - "StatusIcon"
+Cohesion: 0.14
+Nodes (8): Smart status icon with color - works with both Rich and Textual markup., Active status with green checkmark., Inactive/ready status with dimmed circle., Running status with yellow hourglass., Error status with red X., Warning status with yellow warning sign., Pending status with dimmed circle., StatusIcon
 
 ### Community 658 - "BM25"
 Cohesion: 0.14
@@ -5023,8 +5043,8 @@ Cohesion: 0.12
 Nodes (15): Animation Tools Covered, Apple-Style Scroll (pin + scrub), Design Tokens Used, FadeIn — mount animation, HoverCard — interactive hover, How to Use the Components, Related Skills, RevealSection — fade in on scroll (+7 more)
 
 ### Community 660 - "Cortex: Master Architecture Document"
-Cohesion: 0.14
-Nodes (14): 2.1 Conceptual Architecture, 2.2 Design Philosophy, 2. System Overview, 6.1 Sequence Diagram: Agent Activation, 6.2 Sequence Diagram: AI Recommendation, 6.3 Data Flow Diagram: Skill Rating Feedback Loop, 6. Component Interactions, 9.1 Performance Considerations (+6 more)
+Cohesion: 0.11
+Nodes (18): 10.1 Threat Model, 10.2 Secrets Management, 10.3 Data Privacy, 10. Security Architecture, 2.1 Conceptual Architecture, 2.2 Design Philosophy, 2. System Overview, 6.1 Sequence Diagram: Agent Activation (+10 more)
 
 ### Community 661 - "Track C Results ✅ COMPLETE"
 Cohesion: 0.33
@@ -5190,9 +5210,9 @@ Nodes (13): Address "Spirit vs Letter" Arguments, Build Rationalization Table, B
 Cohesion: 0.14
 Nodes (13): Common Mistakes, GREEN: Write Minimal Skill, Overview, Quick Reference, RED-GREEN-REFACTOR Workflow, RED: Write Failing Test (Baseline), REFACTOR: Close Loopholes, Resources (+5 more)
 
-### Community 702 - "TestCommandPaletteFuzzyMatch"
-Cohesion: 0.14
-Nodes (8): Tests for fuzzy matching algorithm in CommandPalette., Set up test fixtures., Test exact substring match scores highest., Test fuzzy character-by-character matching., Test that non-matching queries return 0., Test that consecutive matches get a bonus., Test that fuzzy matching matches against lowercase text. Note: The fuzzy match…, TestCommandPaletteFuzzyMatch
+### Community 702 - "workspace_validator.py"
+Cohesion: 0.29
+Nodes (11): NamedTuple, _extract_paths(), main(), _path_exists(), Path, Validate workspace paths before spawning a subagent. Exposed to the harness as…, Convert a ``crate::mod::sub`` reference to candidate ``.rs`` paths., run() (+3 more)
 
 ### Community 703 - "OpenCode Model Selection Guide"
 Cohesion: 0.14
@@ -5231,8 +5251,8 @@ Cohesion: 0.14
 Nodes (13): Animation Tokens, Base Layer, Button Example, Component Classes, CSS Variables Setup, Dark Mode Toggle, HSL Format Benefits, shadcn/ui Alignment (+5 more)
 
 ### Community 712 - "color"
-Cohesion: 0.12
-Nodes (26): $type, $value, $type, $value, $type, $value, 500, 600 (+18 more)
+Cohesion: 0.15
+Nodes (21): $type, $value, $type, $value, 500, 600, blue, green (+13 more)
 
 ### Community 713 - "Expo Native UI Skill"
 Cohesion: 0.23
@@ -5255,8 +5275,8 @@ Cohesion: 0.14
 Nodes (14): TDD Iron Law: No Production Code Without a Failing Test First, Evidence Before Claims Principle, The Gate Function (Identify, Run, Read, Verify, Claim), Verification Iron Law: No Completion Claims Without Fresh Verification Evidence, Verification Red Flags (Success-Implying Wording Without Evidence), Verification Before Completion, Question Architecture After 3+ Failed Fixes, Condition-Based Waiting Technique (condition-based-waiting.md) (+6 more)
 
 ### Community 718 - ".add_components"
-Cohesion: 0.17
-Nodes (8): main(), Add all available shadcn/ui components. Args: overwrite: If True, overwrite…, List installed components. Returns: Tuple of (success, message with component…, Check if shadcn is initialized in project. Returns: True if components.json…, Get list of already installed components. Returns: List of installed component…, Read shadcn version from project package.json; fall back to a pinned default., Add shadcn/ui components. Args: components: List of component names to add…, Tests for shadcn_add.py
+Cohesion: 0.22
+Nodes (7): main(), Add all available shadcn/ui components. Args: overwrite: If True, overwrite…, List installed components. Returns: Tuple of (success, message with component…, Check if shadcn is initialized in project. Returns: True if components.json…, Get list of already installed components. Returns: List of installed component…, Read shadcn version from project package.json; fall back to a pinned default., Add shadcn/ui components. Args: components: List of component names to add…
 
 ### Community 719 - "Design Directions"
 Cohesion: 0.07
@@ -5534,9 +5554,9 @@ Nodes (12): Accessibility, Common Rules for Professional UI + Pre-Delivery Check
 Cohesion: 0.15
 Nodes (12): 10. Charts & Data (LOW), 1. Accessibility (CRITICAL), 2. Touch & Interaction (CRITICAL), 3. Performance (HIGH), 4. Style Selection (HIGH), 5. Layout & Responsive (HIGH), 6. Typography & Color (MEDIUM), 7. Animation (MEDIUM) (+4 more)
 
-### Community 789 - "ZipFile"
-Cohesion: 0.19
-Nodes (6): Base validator with common validation logic for document files., Validator for Word document XML files against XSD schemas., Validation modules for Word document processing., Validator for PowerPoint presentation XML files against XSD schemas., Validator for tracked changes in Word documents., ZipFile
+### Community 789 - "setup.py"
+Cohesion: 0.23
+Nodes (11): _get_rules_source(), Console, Path, Cortex setup - symlinks rules to ~/.claude/rules/cortex/, Check if setup should run (rules not yet linked)., Find the rules directory in the package., Symlink rule files from source to target directory. Returns (success_count,…, Run cortex setup - symlink rules to ~/.claude/rules/cortex/ (+3 more)
 
 ### Community 790 - "Items"
 Cohesion: 0.17
@@ -5615,8 +5635,8 @@ Cohesion: 0.17
 Nodes (11): After (Agent + Skills), Agent Skills - Progressive Disclosure Architecture, Before (Agent-Only), Benefits vs. Full Agent Loading, Directory Layout, Quality Checklist, Roadmap, See Also (+3 more)
 
 ### Community 809 - "Settings Files Catalog"
-Cohesion: 0.12
-Nodes (16): Configuration Files, Contents, JSON Schemas, Reference Documentation, Activation State Files, Agent and Skill Settings, Auto-Managed Data (for reference), Core Framework Files (+8 more)
+Cohesion: 0.17
+Nodes (12): Activation State Files, Agent and Skill Settings, Auto-Managed Data (for reference), Core Framework Files, External (Claude Desktop MCP Config), Hooks and MCP, Intelligence and Memory, Launcher Configuration (+4 more)
 
 ### Community 810 - "properties"
 Cohesion: 0.17
@@ -6015,8 +6035,8 @@ Cohesion: 0.13
 Nodes (15): CircularDependencyError, DependencyError, MissingDependencyError, Custom exceptions for cortex-plugin. This module defines a hierarchy of…, Raised when YAML content is invalid or malformed., Raised when skill content fails validation., Raised when a version string has invalid format., Base class for dependency-related errors. (+7 more)
 
 ### Community 909 - "PPTXSchemaValidator"
-Cohesion: 0.18
-Nodes (9): PPTXSchemaValidator, BaseSchemaValidator, Validator for PowerPoint presentation XML files against XSD schemas., Check if a value has the general structure of a UUID., Validate that sldLayoutId elements in slide masters reference valid slide…, Validate that each slide has exactly one slideLayout reference., Validate that each notesSlide file is referenced by only one slide., Run all validation checks and return True if all pass. (+1 more)
+Cohesion: 0.07
+Nodes (21): Base validator with common validation logic for document files., Validator for Word document XML files against XSD schemas., Validation modules for Word document processing., PPTXSchemaValidator, BaseSchemaValidator, Validator for PowerPoint presentation XML files against XSD schemas., Validator for PowerPoint presentation XML files against XSD schemas., Check if a value has the general structure of a UUID. (+13 more)
 
 ### Community 910 - "Path"
 Cohesion: 0.20
@@ -6554,9 +6574,9 @@ Nodes (9): Archived Context (stored in memory), Context Capture, Context Distrib
 Cohesion: 0.17
 Nodes (11): Config & dependencies, Contributing & conventions, Dev team agents (`agent/`), Directory layout, Documentation map, Git, Knowledge graph (`graphify-out/`), .opencode — Personal Agent Workspace (+3 more)
 
-### Community 1044 - "TestInstallTarget"
-Cohesion: 0.23
-Nodes (8): MonkeyPatch, Path, unit, Tests for cross-harness hook installation. The same `cortex hooks <name>`…, target='codex' creates ~/.codex/hooks.json with the expected entry., Installing the same hook twice produces no duplicate entries., An existing hooks.json entry for a different event is preserved., TestInstallTarget
+### Community 1044 - "_context.py"
+Cohesion: 0.22
+Nodes (9): extract_file_context(), _git_changed_files(), _hook_log_path(), Any, Path, Shared helpers for Cortex hooks: logging, prompt/file/git context. Extracted…, Detect a Codex hook payload on stdin. Codex invokes hooks with a JSON object on…, Best-effort: list files changed vs HEAD (staged + unstaged). Used for Codex… (+1 more)
 
 ### Community 1045 - "Week 0: Foundation Complete ✅"
 Cohesion: 0.20
@@ -6726,9 +6746,9 @@ Nodes (14): Accessibility, Adding More Animation, Design Tokens, Hover card, Mou
 Cohesion: 0.33
 Nodes (9): _parse(), parametrize, unit, Regression tests for retired legacy skill metadata commands., test_retired_external_skill_is_not_always_on(), test_retired_skill_actions_are_not_exported_or_listed(), test_settings_assets_exclude_retired_skill_metadata_files(), test_skills_parser_keeps_current_commands() (+1 more)
 
-### Community 1087 - "unit"
-Cohesion: 0.29
-Nodes (5): _parse(), patch, unit, TestJustfileDispatch, TestJustfileParsing
+### Community 1087 - "_parse"
+Cohesion: 0.31
+Nodes (4): _parse(), patch, TestJustfileDispatch, TestJustfileParsing
 
 ### Community 1088 - "Karpathy-Style Eval Loop"
 Cohesion: 0.20
@@ -7107,8 +7127,8 @@ Cohesion: 0.25
 Nodes (5): MCPInstallDialog, Pressed, Dialog for configuring and installing an MCP server., Proceed with installation., Handle result from MCP browse dialog.
 
 ### Community 1182 - "QuickNav"
-Cohesion: 0.12
-Nodes (11): Resize, CompactFooter, QuickNav, Ultra-compact footer for very narrow terminals. Shows only essential shortcuts…, Refresh when terminal is resized., Header bar showing view navigation with labeled shortcuts. Shows all available…, Update the current view context., React to view changes. (+3 more)
+Cohesion: 0.09
+Nodes (15): ComposeResult, Create child widgets., Live-updating status bar with neon waveform feedback., Push new info into the status bar., Render status bar with live data., SuperSaiyanStatusBar, CompactFooter, QuickNav (+7 more)
 
 ### Community 1183 - "Contributing to Cortex"
 Cohesion: 0.22
@@ -7131,8 +7151,8 @@ Cohesion: 0.22
 Nodes (8): Connection to the `workflow-*` cleanup, Key decisions, Naming convention, Problem, Roadmap, Skill suites: the meta-skill composition pattern, Solution: the `-suite` meta-skill, The reusable parts
 
 ### Community 1188 - "LLM Intelligence Guide"
-Cohesion: 0.11
-Nodes (19): Advanced Settings, API Reference, Complete Config Example, Confidence Interpretation, Configuration, Configuration Reference, Core Settings, Environment Variables (+11 more)
+Cohesion: 0.22
+Nodes (9): Complete Config Example, Configuration Reference, FAQ, How It Works, Hybrid Strategy, LLM Intelligence Guide, Overview, Request Flow (+1 more)
 
 ### Community 1189 - "Animation Framework"
 Cohesion: 0.22
@@ -7674,17 +7694,17 @@ Nodes (6): CommunityError, RatingError, Base class for community skill errors., 
 Cohesion: 0.29
 Nodes (9): delete_slide(), duplicate_slide(), main(), Delete a slide from the presentation., Move a slide from one position to another., Create a new presentation with slides from template in specified order. Args:…, Duplicate a slide in the presentation., rearrange_presentation() (+1 more)
 
-### Community 1324 - "._get_selected_memory_note"
-Cohesion: 0.20
-Nodes (5): Get the currently selected memory note from the table., Open the selected memory note in external editor., Delete the selected memory note., Contextual delete/diagnose handler for D., Run diagnostics across all MCP servers.
+### Community 1324 - "subagent_output_validator.py"
+Cohesion: 0.33
+Nodes (9): _extract_claimed_creations(), _extract_paths(), main(), _path_exists(), Path, Detect hallucinated file references in subagent outputs. Exposed to the harness…, Return ``(missing_referenced_paths, missing_claimed_creations)``., run() (+1 more)
 
 ### Community 1325 - "Execution Steps"
 Cohesion: 0.12
 Nodes (17): End of Week 2 Checkpoint, Execution Steps, Execution Steps (per test), Integration Test 2: AI Recommendation Flow, Integration Test 3: TUI Navigation Flow, Integration Test 4: File Sync Flow, Output Deliverables, Output Deliverables (+9 more)
 
-### Community 1326 - "load_modes"
-Cohesion: 0.24
-Nodes (9): load_modes(), ModeInfo, _parse_mode_file(), DataTable, Path, Represents a mode in the system., Load modes from the system., Parse a mode file and extract description. (+1 more)
+### Community 1326 - "_parse_mode_file"
+Cohesion: 0.29
+Nodes (7): ModeInfo, _parse_mode_file(), DataTable, Path, Represents a mode in the system., Parse a mode file and extract description., show_modes_view()
 
 ### Community 1327 - "Cortex TUI Entity Relationship Guide"
 Cohesion: 0.25
@@ -7719,7 +7739,7 @@ Cohesion: 0.25
 Nodes (8): api-design-patterns, Collaboration Skills (borrowed from obra/superpowers, MIT), Existing Skills, microservices-patterns, Newly Added Skills, Phase 1 Skills (Foundation), Phase 2 Skills (Core Skills), Summary
 
 ### Community 1335 - "Manpage Generation"
-Cohesion: 0.29
+Cohesion: 0.25
 Nodes (7): 📝 Editing, 📄 Generated Files, Manpage Generation, 🔄 Regeneration, 🔧 Setup Pre-commit Hook, 🧪 Testing, 📅 Version & Date
 
 ### Community 1336 - "Common Issues"
@@ -7946,9 +7966,9 @@ Nodes (8): Apply path, Confirmation Gate (Phase 5), Discard path, Format details
 Cohesion: 0.25
 Nodes (8): Auto-Research, Phase 0 — Read Inputs and Set Up Workspace, Phase 1 — Extract Research Topics, Phase 2 — Parallel Research, Phase 3 — Propose Rewrite (Draft), Phase 5 — Final Confirmation Gate (the only stop), Tool & Model Guidance, What This Skill Deliberately Does NOT Do
 
-### Community 1393 - "3. GPU Backend Build Options"
-Cohesion: 0.25
-Nodes (8): 3. GPU Backend Build Options, Backend reference table, Combined multi-backend build, CUDA build, HIP / ROCm build (AMD GPUs), Metal build (macOS), SYCL build (Intel GPUs), Vulkan build
+### Community 1393 - "large_file_gate.py"
+Cohesion: 0.39
+Nodes (8): _git_changed_files(), main(), Path, Block oversized files in the current changed set. Exposed to the harness as…, run(), _skip_path(), _split_changed_files(), _to_mb()
 
 ### Community 1394 - "5. Integration Method 1: add_subdirectory (Embedding)"
 Cohesion: 0.25
@@ -7986,13 +8006,13 @@ Nodes (8): Ability Lifecycle, Common Patterns & Pitfalls, Core Architecture, Gam
 Cohesion: 0.25
 Nodes (8): AddEngineThirdPartyPrivateStaticDependencies, Advanced Patterns, Android APL (Android Packaging Layer), Barrier Modules (isolating incompatible compiler settings), CMake Integration via UE4CMake, Conan Package Manager Integration, ExternalDependencies for Change Detection, UnrealMacroNuke (comprehensive macro decontamination)
 
-### Community 1403 - "summarize_videos.py"
-Cohesion: 0.43
-Nodes (7): main(), Path, Poll until the uploaded file reaches ACTIVE state., Return custom prompt if provided, otherwise the default., resolve_prompt(), summarize_video(), wait_for_file_active()
+### Community 1403 - "Using Phosphor Icons in a Web/App Project"
+Cohesion: 0.25
+Nodes (7): Browse & pick icons, Files added here, Icon font (plain HTML), Local SVG (offline / any stack), React / Vue (best for real projects), Using Phosphor Icons in a Web/App Project, Which format to use per project
 
 ### Community 1404 - "input"
 Cohesion: 0.29
-Nodes (8): padding-x, input, $type, $value, focus-ring, padding-x, $type, $value
+Nodes (8): padding-y, input, $type, $value, focus-ring, padding-y, $type, $value
 
 ### Community 1405 - "Expo Plugin"
 Cohesion: 0.25
@@ -8472,15 +8492,15 @@ Nodes (6): Additional Debugging Tools, Gameplay Debugger, Network Profiler, Refe
 
 ### Community 1524 - "BUNDLES-INDEX.md"
 Cohesion: 0.25
-Nodes (6): checklist-design-skill (2), Claude-Cortex (268), claude-skills (42), expo-skills (52), i-have-adhd (2), skills (82)
+Nodes (4): Claude-Cortex (140), claude-skills (21), expo-skills (26), skills (41)
 
 ### Community 1525 - "TechStack.tsx"
 Cohesion: 0.29
 Nodes (5): allItems, cliStack, flutterStack, marqueeItems, TechStack()
 
-### Community 1526 - "setup.py"
-Cohesion: 0.23
-Nodes (11): _get_rules_source(), Console, Path, Cortex setup - symlinks rules to ~/.claude/rules/cortex/, Check if setup should run (rules not yet linked)., Find the rules directory in the package., Symlink rule files from source to target directory. Returns (success_count,…, Run cortex setup - symlink rules to ~/.claude/rules/cortex/ (+3 more)
+### Community 1526 - "DocxXMLEditor"
+Cohesion: 0.09
+Nodes (15): DocxXMLEditor, Ensure w14 namespace is declared on the root element., Inject RSID, author, and date attributes into DOM nodes where applicable. Adds…, Replace node with automatic attribute injection., Insert after with automatic attribute injection., Insert before with automatic attribute injection., Reject an insertion by wrapping its content in a deletion. Wraps all runs…, Reject a deletion by re-inserting the deleted content. Creates w:ins elements… (+7 more)
 
 ### Community 1527 - "UMG animations from C++"
 Cohesion: 0.29
@@ -8494,9 +8514,9 @@ Nodes (6): Key Features, Knowledge Base, Slides Reference, Usage, When to Use, W
 Cohesion: 0.29
 Nodes (6): Animation Classes, Background Images, Base Structure, Chart.js Integration, CSS Variables Reference, HTML Slide Template
 
-### Community 1530 - "primitive"
-Cohesion: 0.25
-Nodes (8): normal, slow, $type, $value, primitive, duration, $type, $value
+### Community 1530 - "duration"
+Cohesion: 0.29
+Nodes (7): normal, slow, $type, $value, duration, $type, $value
 
 ### Community 1531 - "Design Taste Frontend (v2)"
 Cohesion: 0.29
@@ -8686,9 +8706,9 @@ Nodes (6): Core Architecture, `core/mcp_installer.py` (310 lines), `core/mcp.py`
 Cohesion: 0.33
 Nodes (6): Data Models, EnvVarConfig, InstallResult, MCPServerCapabilities, MCPServerDefinition, MCPServerInfo
 
-### Community 1578 - "Model Optimization Strategy"
-Cohesion: 0.04
-Nodes (49): 2025-11-14: Initial Two-Tier Strategy, 2025-11-25: Opus 4.5 as Daily Driver, Active Agent Model Distribution, Agent Frontmatter, Agent Model Assignments, Alerts, Baseline (All Sonnet), Best Practices (+41 more)
+### Community 1578 - "Future Enhancements"
+Cohesion: 0.33
+Nodes (6): Cost Budgets, Effort Level Auto-Tuning, Future Enhancements, Opus Effort Optimization, Performance Profiling, Smart Two-Tier Routing
 
 ### Community 1579 - "Mobile-Specific Screens"
 Cohesion: 0.17
@@ -9182,9 +9202,9 @@ Nodes (4): Acceptance Criteria, Description, Final Summary, Implementation Plan
 Cohesion: 0.40
 Nodes (4): Acceptance Criteria, Description, Final Summary, Implementation Plan
 
-### Community 1703 - "Performance Best Practices for Blueprints"
-Cohesion: 0.33
-Nodes (6): 1. Eliminate Event Tick, 2. Disable Tick on Components and Actors, 3. Cache References, 4. Minimize Blueprint Node Count in Hot Paths, 5. Avoid Unnecessary Construction Script Work, Performance Best Practices for Blueprints
+### Community 1703 - "_detect_framework"
+Cohesion: 0.39
+Nodes (3): _detect_framework(), Detect the frontend framework from config files., TestDetectFramework
 
 ### Community 1704 - "README.pt-BR.md"
 Cohesion: 0.18
@@ -9198,9 +9218,9 @@ Nodes (9): Cài đặt, Các quy tắc, Ghi nhận tác giả (Credits), Giấy 
 Cohesion: 0.40
 Nodes (3): Path, Initialize semantic matcher. Args: cache_dir: Directory for caching embeddings, Load cached embeddings from disk.
 
-### Community 1707 - "uninstall"
-Cohesion: 0.50
-Nodes (4): main(), Uninstall cortex rules and optionally the package. Args: dry_run: Show what…, Main entry point for uninstall command., uninstall()
+### Community 1707 - "AgentCommandProvider"
+Cohesion: 0.29
+Nodes (6): AgentCommandProvider, Hit, Provider, Command provider for agent-related commands - SUPER SAIYAN MODE! ⚡, Show default commands with MAXIMUM VISUAL IMPACT!, Search for agent commands with ULTRA styling! Args: query: The search query…
 
 ### Community 1708 - "README.zh-CN.md"
 Cohesion: 0.18
@@ -9342,13 +9362,13 @@ Nodes (5): Configuration Generation, Installation Execution, Installation System
 Cohesion: 0.40
 Nodes (5): Discovery Process, Doc-Only Servers, Platform-Specific Config Paths, Server Discovery & Validation, Validation System
 
-### Community 1743 - "Issue Analysis"
-Cohesion: 0.40
-Nodes (5): 1. SQLite Resource Warnings (14 instances), 2. Deprecated `datetime.utcnow()` (5 instances), 3. Pytest Unknown Markers (34 warnings), 4. Coverage Failure Gate, Issue Analysis
+### Community 1743 - "2. Basic Build from Source"
+Cohesion: 0.33
+Nodes (6): 2. Basic Build from Source, Clone and build, Debug build (for development), Install to a custom prefix, Minimal build (library only, no tools), Quick verification
 
-### Community 1744 - "Best Practices Summary"
-Cohesion: 0.40
-Nodes (5): Best Practices Summary, Do's, Don'ts, Performance Tips, Security Considerations
+### Community 1744 - "How It Works"
+Cohesion: 0.21
+Nodes (8): Agent-loops: progressive quality gates, Development, How It Works, Install, macOS (Homebrew), Multi-model review with no self-review, Python (any platform), Skill recommendations
 
 ### Community 1745 - "OpenCodePluginTest"
 Cohesion: 0.31
@@ -9358,9 +9378,9 @@ Nodes (3): OpenCodePluginTest, Mirror tests/test_always_on_hooks.py for the Open
 Cohesion: 0.18
 Nodes (10): AssetKind, AssetRef, AssetStatus, CTA, RecipeId, ScrollPattern, SectionAssetMap, SectionMeta (+2 more)
 
-### Community 1747 - "Tools and Resources"
-Cohesion: 0.40
-Nodes (5): Documentation Links, Further Reading, Libraries and Frameworks, Recommended Tools, Tools and Resources
+### Community 1747 - "is_protected_branch"
+Cohesion: 0.43
+Nodes (3): is_protected_branch(), Return ``True`` if *branch* is in the protected set (default: main, master)., TestIsProtectedBranch
 
 ### Community 1748 - "Styling System"
 Cohesion: 0.40
@@ -9386,9 +9406,13 @@ Nodes (5): Color Usage Pattern, Notes for Developers, Quick Theme Overrides (CSS
 Cohesion: 0.40
 Nodes (5): Phase 1: Theme System (Highest Priority), Phase 2: Visual Polish (High Priority), Phase 3: Interactive Features (Medium Priority), Phase 4-5: Information Architecture & Visualizations (Lower Priority), Priority Enhancement Recommendations
 
-### Community 1754 - "12. Python Client Examples"
+### Community 1754 - "4.7 MCP Integration"
 Cohesion: 0.40
-Nodes (5): 12. Python Client Examples, Async Client, Using requests (low-level), Using the Anthropic Python SDK, Using the OpenAI Python SDK
+Nodes (5): 4.7 MCP Integration, Curated Documentation, MCP Architecture, Server Discovery, TUI MCP View
+
+### Community 1755 - "11. Common Performance Issues"
+Cohesion: 0.29
+Nodes (7): 11. Common Performance Issues, Context Size Too Large, Miscellaneous Tips, NUMA and Memory Topology Issues, Thread Count Too High, VRAM Overflow (Partial CPU Offload), Wrong Quantization for Hardware
 
 ### Community 1756 - "Architecture & Design (4 skills)"
 Cohesion: 0.40
@@ -9401,6 +9425,10 @@ Nodes (5): Content Structure, Description Format, Naming Conventions, Progressiv
 ### Community 1758 - "Security (4 skills)"
 Cohesion: 0.40
 Nodes (5): owasp-top-10, secure-coding-practices, Security (4 skills), security-testing-patterns, threat-modeling-techniques
+
+### Community 1759 - "AdaptiveFooter"
+Cohesion: 0.12
+Nodes (11): Resize, AdaptiveFooter, Initialize the responsive footer., Adaptive footer that switches between responsive and compact modes.…, Initialize adaptive footer. Args: compact_threshold: Width below which to use…, Update the current view context., React to view changes., Refresh when terminal is resized. (+3 more)
 
 ### Community 1760 - "Part 2: Understanding the Layout"
 Cohesion: 0.40
@@ -9626,9 +9654,9 @@ Nodes (4): Auto-Download (default behaviour), Manual install, SoundFonts, Withou
 Cohesion: 0.60
 Nodes (4): easeInOutCubic(), Navbar(), navLinks, smoothScrollTo()
 
-### Community 1817 - "10. Security Architecture"
-Cohesion: 0.50
-Nodes (4): 10.1 Threat Model, 10.2 Secrets Management, 10.3 Data Privacy, 10. Security Architecture
+### Community 1817 - "6. Common Pitfalls"
+Cohesion: 0.29
+Nodes (7): 6. Common Pitfalls, Blueprint Latency, CRT Mismatch (Windows), Model File Distribution, RTTI and Exceptions, Thread Safety, UE `check` Macro Conflict
 
 ### Community 1818 - "$type"
 Cohesion: 0.60
@@ -9642,9 +9670,9 @@ Nodes (5): Android Directory Structure, Android: Native Library Integration, And
 Cohesion: 0.40
 Nodes (5): Restoring Windows Atomics, Restoring Windows Platform Types, UE's `check` Macro Collision, Windows.h, Windows: Header Conflicts
 
-### Community 1823 - "50"
-Cohesion: 0.67
-Nodes (4): $type, $value, 50, 50
+### Community 1823 - "_log_hook"
+Cohesion: 0.60
+Nodes (5): main(), _porcelain_paths(), Nudge the model to commit when stopping with uncommitted changes. Exposed to…, run(), _log_hook()
 
 ### Community 1824 - "radius"
 Cohesion: 0.60
@@ -10006,9 +10034,9 @@ Nodes (4): Phase 1: TUI Refactor (Weeks 2-5), Phase 2: Intelligence Refactor (We
 Cohesion: 0.22
 Nodes (9): Dashboard Views, Description, Export Capabilities, Feature 4: Usage Analytics Dashboard 📊, Personal Analytics, Project Analytics, Skill Performance, Success Metrics (+1 more)
 
-### Community 1915 - "Core Concepts"
-Cohesion: 0.67
-Nodes (3): Concept 1: Foundation, Concept 2: Building Blocks, Core Concepts
+### Community 1915 - "Model Optimization Strategy"
+Cohesion: 0.33
+Nodes (5): Feedback-Driven Optimization, Migration Notes, Model Optimization Strategy, Overview, Resources
 
 ### Community 1916 - "Documentation Tools & Infrastructure"
 Cohesion: 0.50
@@ -10054,9 +10082,9 @@ Nodes (4): Configuration Safety, Disclaimer, Security Best Practices, Security C
 Cohesion: 0.50
 Nodes (4): API Pricing, Monthly Estimates, Pricing & Costs, Typical Costs per Analysis
 
-### Community 1927 - "Real-World Examples"
-Cohesion: 0.67
-Nodes (3): Example 1: [Practical Scenario], Example 2: [Different Scenario], Real-World Examples
+### Community 1927 - "3. Custom C++ Integration (Build llama.cpp as Static Library for UE)"
+Cohesion: 0.33
+Nodes (6): 3.1 Build llama.cpp as Static Library, 3.2 Create External Module in UE Plugin, 3.3 LlamaCpp.Build.cs, 3.4 Consumer Module Build.cs, 3.5 Wrapper Class Pattern, 3. Custom C++ Integration (Build llama.cpp as Static Library for UE)
 
 ### Community 1928 - "Monitoring & Analytics"
 Cohesion: 0.50
@@ -10078,17 +10106,25 @@ Nodes (4): Collaboration Commands, /ctx:brainstorm, /ctx:execute-plan, /ctx:plan
 Cohesion: 0.50
 Nodes (4): Session Commands, /session:load, /session:reflect, /session:save
 
-### Community 1933 - "Testing Strategies"
-Cohesion: 0.67
-Nodes (3): Integration Testing, Testing Strategies, Unit Testing
+### Community 1933 - "enum"
+Cohesion: 0.40
+Nodes (5): independence, isolation, large_scope, parallel, enum
 
-### Community 1934 - "Troubleshooting"
-Cohesion: 0.67
-Nodes (3): Issue 1: [Common Problem], Issue 2: [Another Problem], Troubleshooting
+### Community 1934 - "cmd_review.py"
+Cohesion: 0.40
+Nodes (4): get_skill_path(), main(), Get the path to a skill's SKILL.md file., Main review gate logic.
 
-### Community 1935 - "9. Output Access"
-Cohesion: 0.67
-Nodes (3): 9. Output Access, Embeddings, Logits
+### Community 1935 - "Test Execution Baseline"
+Cohesion: 0.50
+Nodes (4): Current Test Suite Structure, Test Execution Baseline, Test Execution Metrics, Test Markers Status
+
+### Community 1937 - "StatusData"
+Cohesion: 0.40
+Nodes (5): format_json(), Collected status information., JSON output for scripting., StatusData, test_json_always_includes_cost()
+
+### Community 1938 - "Cost Analysis"
+Cohesion: 0.40
+Nodes (5): Baseline (All Sonnet), Cost Analysis, Model Pricing Reference, Optimized Three-Tier Hybrid, Opus Effort Parameter Optimization
 
 ### Community 1939 - "Open-Source Interactive Website Templates"
 Cohesion: 0.25
@@ -10117,6 +10153,26 @@ Nodes (4): Code Structure, Main Files, State Management, View Methods Pattern
 ### Community 1946 - "Getting Started with Enhancement"
 Cohesion: 0.50
 Nodes (4): For Complete Enhancement (3-4 months), For Quick Wins (2-4 hours), For Theme System (1 week), Getting Started with Enhancement
+
+### Community 1947 - "800"
+Cohesion: 0.67
+Nodes (4): $type, $value, 800, 800
+
+### Community 1948 - "11. Chat Templates"
+Cohesion: 0.67
+Nodes (3): 11. Chat Templates, Applying Chat Templates, Incremental Chat Template Pattern
+
+### Community 1949 - "Best Practices"
+Cohesion: 0.40
+Nodes (5): Best Practices, Effort Level Strategy, Monitoring & Optimization, Opus-First Strategy, When to Use Haiku
+
+### Community 1950 - "Hybrid Orchestration Patterns"
+Cohesion: 0.40
+Nodes (5): Hybrid Orchestration Patterns, Pattern 1: Design → Implement → Review, Pattern 2: Research → Generate → Validate, Pattern 3: Troubleshoot → Fix → Test, Pattern 4: Audit → Remediate → Verify (Critical Path)
+
+### Community 1951 - "Core Systems"
+Cohesion: 0.40
+Nodes (5): 1. Command System, 2. Agent System, 3. Rule System, 4. Python CLI, Core Systems
 
 ### Community 1952 - "Integration with Agents"
 Cohesion: 0.50
@@ -10214,9 +10270,13 @@ Nodes (3): Field descriptions and constraints, Full example, openai.yaml fields 
 Cohesion: 0.50
 Nodes (4): JWT Checklist, JWT Security, Secure Implementation, Vulnerabilities
 
-### Community 1980 - "XML External Entity (XXE)"
-Cohesion: 0.50
-Nodes (4): Prevention by Language/Parser, Vulnerable Scenarios, XML External Entity (XXE), XXE Prevention Checklist
+### Community 1980 - "→ AI Intelligence & Automation {#ai-intelligence}"
+Cohesion: 0.40
+Nodes (5): → AI Intelligence & Automation {#ai-intelligence}, CLI Commands, Documentation, TUI AI Assistant, Watch Mode - Real-Time Monitoring
+
+### Community 1981 - "Registry Validation"
+Cohesion: 0.40
+Nodes (5): Notes, Overview, Registry Validation, scripts/ Utilities, What it removes
 
 ### Community 1982 - "Checklist for effective Skills"
 Cohesion: 0.50
@@ -10258,9 +10318,9 @@ Nodes (4): `bIsVariable` on widgets is required for both graph access AND animat
 Cohesion: 0.50
 Nodes (4): Compiler / save quirks, `FAssetRegistryModule::AssetCreated(Asset)` before SavePackage, `MarkBlueprintAsModified` is too weak for codegen, Saving needs `RF_Public | RF_Standalone`
 
-### Community 1992 - "padding-y"
-Cohesion: 0.67
-Nodes (4): padding-y, padding-y, $type, $value
+### Community 1992 - "5. Memory Optimization"
+Cohesion: 0.40
+Nodes (5): 5. Memory Optimization, Context Size Reduction, KV Cache Quantization, Model Quantization Choices, Sleep on Idle
 
 ### Community 1993 - "Media Reference"
 Cohesion: 0.50
@@ -10314,6 +10374,14 @@ Nodes (4): Materiality, Shadows, Cards, Shape Consistency Lock (corner-radius sy
 Cohesion: 0.67
 Nodes (3): Changeset: prototype as primary source, Prototype as Primary Source, prototype
 
+### Community 2020 - "12. Python Client Examples"
+Cohesion: 0.40
+Nodes (5): 12. Python Client Examples, Async Client, Using requests (low-level), Using the Anthropic Python SDK, Using the OpenAI Python SDK
+
+### Community 2021 - "RENDERING & VISUAL"
+Cohesion: 0.40
+Nodes (5): Control Rig, Lumen (GI & Reflections), Nanite (Virtualized Geometry), Niagara, RENDERING & VISUAL
+
 ### Community 2022 - "Mobile App Patterns"
 Cohesion: 0.25
 Nodes (8): Infinite Scroll, Mobile App Patterns, Mobile Navigation Patterns, Mobile Projects, Modal/Bottom Sheet, Pull-to-Refresh, React Native / Expo Apps, Skeleton Loading
@@ -10354,9 +10422,13 @@ Nodes (3): Mitigation Strategies, Risk Management, Technical Risks
 Cohesion: 0.25
 Nodes (7): Authorship and provenance — select exactly one, Compatibility, Final accountability, Labels, Safety and side effects, Summary, Verification
 
-### Community 2035 - "4.9 Validation & Review System"
-Cohesion: 0.29
-Nodes (7): 4.9 Validation & Review System, Architecture, Benefits, CLI Usage, Diagnosis Data Model, Diagnostic Categories, Integration with Workflows
+### Community 2035 - "GAMEPLAY FRAMEWORK"
+Cohesion: 0.40
+Nodes (5): Game Feature Plugins & Modular Gameplay, Gameplay Ability System (GAS), GAMEPLAY FRAMEWORK, Gameplay Tags, GameplayMessageSubsystem
+
+### Community 2036 - "$type"
+Cohesion: 0.60
+Nodes (5): $type, $value, 700, 700, 700
 
 ### Community 2037 - "Troubleshooting"
 Cohesion: 0.67
@@ -10369,6 +10441,10 @@ Nodes (3): Design Commands, /design:system, /design:workflow
 ### Community 2039 - "Quality Commands"
 Cohesion: 0.67
 Nodes (3): /quality:cleanup, Quality Commands, /quality:improve
+
+### Community 2040 - "lg"
+Cohesion: 0.60
+Nodes (5): lg, $type, $value, lg, lg
 
 ### Community 2041 - "Immediate (Today/Tomorrow)"
 Cohesion: 0.29
@@ -10402,6 +10478,22 @@ Nodes (3): Code, Documentation, File Locations
 Cohesion: 0.67
 Nodes (3): Current State Summary, What Could Be Better, What Works Well
 
+### Community 2049 - "Understanding Recommendations"
+Cohesion: 0.50
+Nodes (4): Confidence Interpretation, Recommendation Structure, Understanding Recommendations, Urgency Levels
+
+### Community 2050 - "Agent Model Assignments"
+Cohesion: 0.50
+Nodes (4): Agent Model Assignments, Context-Dependent (1 agent), Haiku Agents (Speed Tier), Opus Agents (Default - Daily Driver)
+
+### Community 2051 - "Model Assignment Criteria"
+Cohesion: 0.50
+Nodes (4): Legacy: Sonnet Fallback, Model Assignment Criteria, Use Haiku When:, Use Opus (Default) When:
+
+### Community 2052 - "Version History"
+Cohesion: 0.50
+Nodes (4): 0.1.0 (2025-10-17), 1.2.0 (2025-12-21), 2.0.0 (2026-01-08), Version History
+
 ### Community 2053 - "destructive-foreground"
 Cohesion: 0.67
 Nodes (3): destructive-foreground, $type, $value
@@ -10426,9 +10518,9 @@ Nodes (3): 17. Complete Working Examples, Example 1: Minimal Inference (simple.c
 Cohesion: 0.67
 Nodes (3): 6. Context Creation, Context Configuration, Context Query Functions
 
-### Community 2067 - "11. Common Performance Issues"
-Cohesion: 0.29
-Nodes (7): 11. Common Performance Issues, Context Size Too Large, Miscellaneous Tips, NUMA and Memory Topology Issues, Thread Count Too High, VRAM Overflow (Partial CPU Offload), Wrong Quantization for Hardware
+### Community 2067 - "Troubleshooting"
+Cohesion: 0.50
+Nodes (4): Agent Not Activating, CLI Issues, Commands Not Loading, Troubleshooting
 
 ### Community 2069 - "destructive"
 Cohesion: 0.67
@@ -10440,11 +10532,15 @@ Nodes (3): secondary-foreground, $type, $value
 
 ### Community 2071 - "ShadcnInstaller"
 Cohesion: 0.14
-Nodes (8): Handle shadcn/ui component installation., ShadcnInstaller, Test initialization with default project root., Test initialization with custom project root., Test initialization with dry run mode., Test getting installed components when none exist., Test getting installed components without config., Test adding components with empty list.
+Nodes (8): Handle shadcn/ui component installation., ShadcnInstaller, Test adding components without shadcn config., Test listing installed components without config., Test initialization with default project root., Test checking for non-existent shadcn config., Test getting installed components when none exist., Test getting installed components when files exist.
 
-### Community 2073 - "2. Llama-Unreal Plugin (Recommended)"
-Cohesion: 0.29
-Nodes (7): 2. Llama-Unreal Plugin (Recommended), Blueprint Usage, C++ Usage, Core API, Features, Key Settings, Setup
+### Community 2072 - "Development Workflows"
+Cohesion: 0.50
+Nodes (4): Bug Fixing, Code Quality, Development Workflows, Feature Development
+
+### Community 2073 - "Framework Entry Points"
+Cohesion: 0.50
+Nodes (4): CLAUDE.md, Framework Entry Points, PRINCIPLES.md, RULES.md
 
 ### Community 2074 - "ring"
 Cohesion: 0.67
@@ -10510,6 +10606,18 @@ Nodes (3): Borders, Subtle Layering, Surface Elevation
 Cohesion: 0.29
 Nodes (7): 1. Explore, 2. Present findings and ask, 3. Confirm and edit, 4. Write, 5. Done, Process, Setup Matt Pocock's Skills
 
+### Community 2104 - "MCP Integration"
+Cohesion: 0.50
+Nodes (4): Context7, MCP Integration, Sequential, Serena
+
+### Community 2108 - "Reference Documentation"
+Cohesion: 0.50
+Nodes (4): Configuration Files, Contents, JSON Schemas, Reference Documentation
+
+### Community 2109 - "keywords"
+Cohesion: 0.50
+Nodes (4): description, type, uniqueItems, keywords
+
 ### Community 2148 - "4.8 Component Toggle System"
 Cohesion: 0.33
 Nodes (6): 4.8 Component Toggle System, Architecture, Benefits, Core Functions, HTML Comment-Based Activation, Usage Examples
@@ -10518,9 +10626,9 @@ Nodes (6): 4.8 Component Toggle System, Architecture, Benefits, Core Functions, 
 Cohesion: 0.33
 Nodes (6): 🚫 Blocked (User Must Decide), ⚠️ Code Issues Found, ⚠️ Documentation Revision Required, Exit Scenarios, ✅ Success (All Gates Pass), ⚠️ User Permission Required
 
-### Community 2151 - "🎯 Use Cases"
-Cohesion: 0.33
-Nodes (6): 1. **Security-Sensitive Work**, 2. **Large Refactoring**, 3. **API Development**, 4. **Bug Fixing**, 5. **Team Patterns**, 🎯 Use Cases
+### Community 2151 - "XML External Entity (XXE)"
+Cohesion: 0.50
+Nodes (4): Prevention by Language/Parser, Vulnerable Scenarios, XML External Entity (XXE), XXE Prevention Checklist
 
 ### Community 2152 - "Basic Usage"
 Cohesion: 0.33
@@ -10566,9 +10674,9 @@ Nodes (6): How to Use This Skill, Step 1: Analyze User Requirements, Step 2: Gen
 Cohesion: 0.40
 Nodes (4): ADHD-friendly output (`i-have-adhd`), graphify, Requirements-driven site builds (manifest-first), UI, Motion & Radix (website work)
 
-### Community 2221 - "enum"
-Cohesion: 0.40
-Nodes (5): independence, isolation, large_scope, parallel, enum
+### Community 2221 - "padding-x"
+Cohesion: 0.67
+Nodes (4): padding-x, padding-x, $type, $value
 
 ### Community 2222 - "Track B Results ✅ COMPLETE"
 Cohesion: 0.40
@@ -10610,21 +10718,21 @@ Nodes (5): Description, Feature 6: Personalization Engine 🎯, Learning Paths, 
 Cohesion: 0.40
 Nodes (5): Common Pitfalls, Pitfall 1: Forgetting Placeholders, Pitfall 2: Multiple Connections, Pitfall 3: Catching Too Broadly, Pitfall 4: No Error on Missing File
 
-### Community 2232 - "🧠 What It Does"
-Cohesion: 0.40
-Nodes (5): 1. Context Detection, 2. Pattern Learning, 3. Intelligent Recommendations, 4. Workflow Prediction, 🧠 What It Does
+### Community 2232 - "Configuration"
+Cohesion: 0.67
+Nodes (3): Advanced Settings, Configuration, Core Settings
 
-### Community 2233 - "🚨 Best Practices"
-Cohesion: 0.40
-Nodes (5): 1. Record Successful Sessions, 2. Review Recommendations, 3. Let It Learn, 4. Override When Needed, 🚨 Best Practices
+### Community 2233 - "API Reference"
+Cohesion: 0.67
+Nodes (3): API Reference, Environment Variables, Python Integration
 
-### Community 2234 - "🛠️ CLI Usage Examples"
-Cohesion: 0.40
-Nodes (5): Auto-Activate Agents, 🛠️ CLI Usage Examples, Export to JSON, Get Recommendations, Record Success
+### Community 2234 - "Changelog"
+Cohesion: 0.67
+Nodes (3): 2025-11-14: Initial Two-Tier Strategy, 2025-11-25: Opus 4.5 as Daily Driver, Changelog
 
-### Community 2235 - "📺 TUI AI Assistant View (Key 8)"
-Cohesion: 0.40
-Nodes (5): 📊 CONTEXT ANALYSIS, 🤖 INTELLIGENT RECOMMENDATIONS, ⚡ QUICK ACTIONS, 📺 TUI AI Assistant View (Key 8), 🎯 WORKFLOW PREDICTION
+### Community 2235 - "Implementation Status"
+Cohesion: 0.67
+Nodes (3): Active Agent Model Distribution, Effort Escalation Triggers, Implementation Status
 
 ### Community 2236 - "Hooks & Automation"
 Cohesion: 0.40
@@ -10654,13 +10762,13 @@ Nodes (5): 7. Integration Method 3: Static Library with PIC, Build llama.cpp as 
 Cohesion: 0.40
 Nodes (5): 9. Docker Images, Building a custom Docker image, GPU-enabled variants, Image variants, Running the server with Docker
 
-### Community 2243 - "5. Memory Optimization"
-Cohesion: 0.40
-Nodes (5): 5. Memory Optimization, Context Size Reduction, KV Cache Quantization, Model Quantization Choices, Sleep on Idle
+### Community 2243 - "Implementation Guidelines"
+Cohesion: 0.67
+Nodes (3): Agent Frontmatter, Decision Matrix, Implementation Guidelines
 
-### Community 2244 - "10. Supported Model Architectures"
-Cohesion: 0.40
-Nodes (5): 10. Supported Model Architectures, Embedding Models, Multimodal / Vision-Language Models, Notes on Architecture Support, Text / Language Models
+### Community 2244 - "Monitoring & Observability"
+Cohesion: 0.67
+Nodes (3): Alerts, Key Metrics, Monitoring & Observability
 
 ### Community 2245 - "4. Quantization Commands"
 Cohesion: 0.40
@@ -10693,6 +10801,10 @@ Nodes (4): ASSET-MANIFEST — where files go, and what's checked, Checklist — 
 ### Community 2253 - "MOTION-SPEC — storyboard & recipe bank"
 Cohesion: 0.40
 Nodes (4): MOTION-SPEC — storyboard & recipe bank, Recipe bank, Storyboard (AURA example — replace with your client's, then update `site.config.ts`), Target platform notes (hold these during build)
+
+### Community 2254 - "Performance Metrics"
+Cohesion: 0.67
+Nodes (3): Latency Comparison, Performance Metrics, Quality Metrics
 
 ### Community 2255 - ".opencode/opencode.json"
 Cohesion: 0.50
@@ -10750,25 +10862,29 @@ Nodes (4): Data Flow, Integration & Architecture, Module Responsibilities, Syste
 Cohesion: 0.50
 Nodes (4): Load Time Optimization, Performance Metrics, Storage Efficiency, Token Efficiency
 
-### Community 2269 - "🔬 Advanced Features"
-Cohesion: 0.50
-Nodes (4): 🔬 Advanced Features, Confidence Scoring, Custom Context Detection, Workflow Prediction Algorithm
+### Community 2269 - "Contributing"
+Cohesion: 0.67
+Nodes (3): Adding Commands, Contributing, Creating Agents
 
-### Community 2270 - "🧪 How It Works"
-Cohesion: 0.50
-Nodes (4): Context Detection Flow, 🧪 How It Works, Pattern Learning Flow, Recommendation Algorithm
+### Community 2270 - "Best Practices"
+Cohesion: 0.67
+Nodes (3): Agent Coordination, Best Practices, Command Usage
 
-### Community 2271 - "🎓 Learning Examples"
-Cohesion: 0.50
-Nodes (4): Example 1: Security Pattern, Example 2: API Development Pattern, Example 3: Code Review Pattern, 🎓 Learning Examples
+### Community 2271 - "🤝 Collaboration Flow & Skill Auto-Suggestions {#collaboration}"
+Cohesion: 0.67
+Nodes (3): 🤝 Collaboration Flow & Skill Auto-Suggestions {#collaboration}, Install the skill auto-suggester hook, Recommended workflow
 
-### Community 2272 - "🆘 Troubleshooting"
-Cohesion: 0.50
-Nodes (4): Low Confidence Scores, No Recommendations, 🆘 Troubleshooting, Wrong Recommendations
+### Community 2272 - "References"
+Cohesion: 0.67
+Nodes (3): External Resources, Internal Documentation, References
 
-### Community 2274 - "keywords"
-Cohesion: 0.50
-Nodes (4): description, type, uniqueItems, keywords
+### Community 2273 - "📖 Appendix: Quick Command Reference"
+Cohesion: 0.67
+Nodes (3): 📖 Appendix: Quick Command Reference, Essential CLI Commands, TUI Navigation
+
+### Community 2274 - "Part 1: Installation & First Launch"
+Cohesion: 0.67
+Nodes (3): Part 1: Installation & First Launch, Step 1: Install cortex, Step 2: Launch the TUI
 
 ### Community 2275 - "file_patterns"
 Cohesion: 0.50
@@ -10818,26 +10934,6 @@ Nodes (3): Test Classes, Test Coverage, Testing
 Cohesion: 0.67
 Nodes (3): For Contributors, For Users, Getting Started
 
-### Community 2288 - "🎉 Benefits"
-Cohesion: 0.67
-Nodes (3): 🎉 Benefits, For Individual Developers:, For Teams:
-
-### Community 2289 - "🚀 Quick Start"
-Cohesion: 0.67
-Nodes (3): CLI Commands, Launch TUI with AI Assistant, 🚀 Quick Start
-
-### Community 2290 - "🎮 Keyboard Shortcuts"
-Cohesion: 0.67
-Nodes (3): In AI Assistant View:, In Any View:, 🎮 Keyboard Shortcuts
-
-### Community 2291 - "📖 Appendix: Quick Command Reference"
-Cohesion: 0.67
-Nodes (3): 📖 Appendix: Quick Command Reference, Essential CLI Commands, TUI Navigation
-
-### Community 2292 - "Part 1: Installation & First Launch"
-Cohesion: 0.67
-Nodes (3): Part 1: Installation & First Launch, Step 1: Install cortex, Step 2: Launch the TUI
-
 ### Community 2294 - "14. LoRA Adapters"
 Cohesion: 0.67
 Nodes (3): 14. LoRA Adapters, Control Vector, LoRA Adapter Metadata
@@ -10861,9 +10957,9 @@ Nodes (3): Desktop Applications, Electron Apps, Tauri Apps
   skills/expo-skills/plugins/expo/skills/expo-router/SKILL.md · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **16630 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `$schema`, `type`, `npx` (+16625 more)
+- **16633 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `$schema`, `type`, `npx` (+16628 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **138 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **139 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -10880,5 +10976,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: semantically_similar_to) - confidence is low._
 - **What is the exact relationship between `NativeTabs Component` and `expo-router/react-navigation Subpath Import Rule`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `AgentTUI` connect `AgentTUI` to `_resolve_claude_dir`, `core/__init__.py`, `hooks.py`, `main.py`, `MemoryNoteCreateDialog`, `SessionContext`, `git/__init__.py`, `context_export.py`, `Asset`, `capture.py`, `MCPInstallDialog`, `.compose`, `QuickNav`, `Path`, `._get_selected_memory_note`, `AssetDetailDialog`, `test_tui_skill_details.py`, `.action_mcp_browse_install`, `Container`, `notes.py`, `AdaptiveFooter`, `._run_command`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `AgentTUI` connect `AgentTUI` to `_resolve_claude_dir`, `core/__init__.py`, `MemoryNoteCreateDialog`, `Icons`, `SessionContext`, `worktree.py`, `Asset`, `capture.py`, `MCPInstallDialog`, `QuickNav`, `Path`, `asset_discovery.py`, `test_tui_skill_details.py`, `CommandPalette`, `Container`, `AdaptiveFooter`, `get_vault_path`, `main.py`, `._run_command`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
