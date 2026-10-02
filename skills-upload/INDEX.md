@@ -1,6 +1,6 @@
 ﻿# Skills for Claude Desktop upload (top-level)
 
-Total top-level: 87 skills. One `.zip` per skill, SKILL.md at root. Bundle skills are under `bundles/` (see bundles/BUNDLES-INDEX.md).
+Total top-level: 89 skills. One `.zip` per skill, SKILL.md at root. Bundle skills are under `bundles/` (see bundles/BUNDLES-INDEX.md).
 
 | # | Skill | Description |
 |---|-------|-------------|
@@ -80,14 +80,16 @@ Total top-level: 87 skills. One `.zip` per skill, SKILL.md at root. Bundle skill
 | 74 | `systematic-debugging.zip` | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes |
 | 75 | `taste-skill-v1.zip` | The original v1 taste-skill, preserved for projects depending on its exact behavior. The current default is `design-taste-frontend` (v2 experimenta... |
 | 76 | `test-driven-development.zip` | Use when implementing any feature or bugfix, before writing implementation code |
-| 77 | `ui-styling.zip` | Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canv... |
-| 78 | `ui-ux-design-pro-skill.zip` | Senior-level UI/UX design expert for building data-driven, premium production interfaces. Use when you need to: 1. Design complex applications (das... |
-| 79 | `ui-ux-pro-max.zip` | UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, includ... |
-| 80 | `unity-ai-game-creator.zip` | Transform raw game ideas into complete Unity projects with AI-powered asset generation, scene blueprints, music/SFX prompts, and step-by-step devel... |
-| 81 | `unity-developer.zip` | Build Unity games with optimized C# scripts, efficient rendering, and proper asset management. Masters Unity 6 LTS, URP/HDRP pipelines, and cross-p... |
-| 82 | `unity-ecs-patterns.zip` | Production patterns for Unity's Data-Oriented Technology Stack (DOTS) including Entity Component System, Job System, and Burst Compiler. |
-| 83 | `unreal-engine-cpp-pro.zip` | Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance patterns, and best practices. |
-| 84 | `using-superpowers.zip` | Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifyi... |
-| 85 | `web-animation.zip` | Add animations, scroll effects, micro-interactions, and motion to any React project. |
-| 86 | `writing-plans.zip` | Use when you have a spec or requirements for a multi-step task, before touching code |
-| 87 | `writing-skills.zip` | Use when creating new skills, editing existing skills, or verifying skills work before deployment |
+| 77 | `threeui-integration.zip` | Integrate ThreeUI Community (MengTo/threeui) WebGL/Three.js/shader UI components into an existing web project. Animated 3D backgrounds... |
+| 78 | `ui-styling.zip` | Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canv... |
+| 79 | `ui-ux-design-pro-skill.zip` | Senior-level UI/UX design expert for building data-driven, premium production interfaces. Use when you need to: 1. Design complex applications (das... |
+| 80 | `ui-ux-pro-max.zip` | UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, includ... |
+| 81 | `unity-ai-game-creator.zip` | Transform raw game ideas into complete Unity projects with AI-powered asset generation, scene blueprints, music/SFX prompts, and step-by-step devel... |
+| 82 | `unity-developer.zip` | Build Unity games with optimized C# scripts, efficient rendering, and proper asset management. Masters Unity 6 LTS, URP/HDRP pipelines, and cross-p... |
+| 83 | `unity-ecs-patterns.zip` | Production patterns for Unity's Data-Oriented Technology Stack (DOTS) including Entity Component System, Job System, and Burst Compiler. |
+| 84 | `unreal-engine-cpp-pro.zip` | Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance patterns, and best practices. |
+| 85 | `using-superpowers.zip` | Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifyi... |
+| 86 | `web-animation.zip` | Add animations, scroll effects, micro-interactions, and motion to any React project. |
+| 87 | `website-compliance-checklist.zip` | Audit and fix a website against a 20-item legal/compliance checklist (privacy, terms, cookies and consent, dark patterns, accessibility, licensing). Not legal... |
+| 88 | `writing-plans.zip` | Use when you have a spec or requirements for a multi-step task, before touching code |
+| 89 | `writing-skills.zip` | Use when creating new skills, editing existing skills, or verifying skills work before deployment |

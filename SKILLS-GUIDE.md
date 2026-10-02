@@ -19,8 +19,9 @@
 3. [Game Development](#game-development)
 4. [Desktop Applications](#desktop-applications)
 5. [Skill Reference](#skill-reference)
-6. [Component Reference](#component-reference)
-7. [Animation Reference](#animation-reference)
+6. [Icons](#icons)
+7. [Component Reference](#component-reference)
+8. [Animation Reference](#animation-reference)
 
 ---
 
@@ -38,6 +39,7 @@
 | `ui-styling` | shadcn/ui + Tailwind CSS | Component styling and layout |
 | `design-taste-frontend` | Anti-slop, premium design | Avoiding generic AI patterns |
 | `high-end-visual-design` | Expensive-feeling interfaces | Premium/luxury brand pages |
+| `threeui-integration` | ThreeUI Community WebGL/Three.js/shader components | Animated 3D backgrounds, hero sections, shader buttons/text effects — **note: no GLB/GLTF model slot exists** |
 
 **Apple-style interactive/3D product pages** (Three.js + GSAP scroll storytelling):
 use `radix-ui` (UI) + `gsap-core`/`web-animation` (motion) + React Three Fiber (3D),
@@ -662,6 +664,38 @@ Components: shadcn/ui or custom
 | `prd-generator` | Product requirements |
 | `requirements-discovery` | Stakeholder interviews |
 | `user-journey-mapping` | UX flows |
+
+### Review & Compliance Skills
+| Skill | Use Case |
+|-------|----------|
+| `website-compliance-checklist` | 20-item pre-launch audit of a public/client site: privacy + terms + refunds, cookie consent, dark patterns, hidden fees, fake reviews, unsupported claims, accessibility (alt/contrast/keyboard), business details, unsubscribe, asset licenses, data deletion. **Not legal advice.** Run before launch or client delivery |
+| `compliance-audit` | GDPR / HIPAA / PCI DSS / SOC 2 / ISO control mapping |
+| `accessibility-audit` | WCAG 2.2 AA triage for pages, components, PRs |
+| `html-seo-review` | On-page SEO + crawlability for static HTML |
+| `terms-of-service` | Draft ToS / Privacy Policy / EULA text |
+
+### 3D / WebGL Skills
+| Skill | Use Case |
+|-------|----------|
+| `threeui-integration` | Add ThreeUI Community (Three.js/shader) backgrounds, heroes, buttons, text effects to an existing web project. 43 components / 104 variants. Requires a browser preview + `npm run build` before claiming done |
+
+---
+
+## Icons
+
+`phosphor-icons/` in the workspace root is a local, license-clean Phosphor set
+(MIT): **1,512 icons × 6 weights** (`thin, light, regular, bold, fill, duotone`)
+as SVG, flat SVG (no background rect) and PNG, plus woff2/woff/ttf fonts.
+
+```html
+<!-- 256×256 viewBox, stroke=currentColor → color with CSS `color` -->
+<img src="/icons/acorn.svg" alt="" width="24" height="24" />
+```
+
+Naming: `SVGs/<weight>/<name>.svg`, `PNGs/<weight>/<name>-<weight>.png`.
+Because it is MIT-licensed and vendored locally, it satisfies the asset-license
+item of `website-compliance-checklist` and needs no CDN request (which also keeps
+it out of the third-party cookie/SDK inventory).
 
 ---
 

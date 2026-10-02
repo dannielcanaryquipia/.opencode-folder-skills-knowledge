@@ -1,15 +1,15 @@
 # Dev Team Guide
 
-Your project has a **dev team** — 5 crews implemented as subagents. Whenever you take on work in this project, read this file: it defines the team, the full skill inventory per crew, and the work-splitting protocol. The `skills/` folder currently holds **261+ skills**; the inventories below are the authoritative map of which crew commands what.
+Your project has a **dev team** — 5 crews implemented as subagents. Whenever you take on work in this project, read this file: it defines the team, the full skill inventory per crew, and the work-splitting protocol. The `skills/` folder currently holds **112 collections / 353 skills**; the inventories below are the authoritative map of which crew commands what.
 
 ## Roster
 
 | Crew | Agent | Skill inventory (summary) | Dispatch when... |
 |---|---|---|---|
 | **Developers** | `dev-build` | superpowers-* (core), ponytail-* (6), caveman-* (6), systematic-debugging, TDD, karpathy-guidelines, full-output-enforcement, claude-skills/opencode, + ~45 Claude-Cortex engineering skills (patterns, security, infra, perf) | Scaffolding, features, refactors, bugfixes, any code |
-| **Design Studio** | `design-studio` | design-taste-frontend, frontend-design/dev, ui-ux-pro-max, ui-ux-design-pro, minimalist/brutalist, brandkit, brand, banner-design, design, design-system, slides, ui-styling, dashboard-designer, checklist-design, imagegen-* (2), image-to-code, gpt-taste, stitch, high-end-visual-design, redesign, web-animation, gsap-core, emilkowalski-motion, impeccable-polish, + ~20 Claude-Cortex design/UX skills, gemini-image-gen, 2d-pixel-asset, tech-product-landing | Landing pages, portfolios, redesigns, UI polish, visual direction |
+| **Design Studio** | `design-studio` | design-taste-frontend, frontend-design/dev, ui-ux-pro-max, ui-ux-design-pro, minimalist/brutalist, brandkit, brand, banner-design, design, design-system, slides, ui-styling, dashboard-designer, checklist-design, imagegen-* (2), image-to-code, gpt-taste, stitch, high-end-visual-design, redesign, web-animation, gsap-core, emilkowalski-motion, impeccable-polish, + ~20 Claude-Cortex design/UX skills, gemini-image-gen, 2d-pixel-asset, tech-product-landing, threeui-integration | Landing pages, portfolios, redesigns, UI polish, visual direction |
 | **Game Dev** | `game-dev` | game-development, game-developer, game-development-* (10), unity-* (3), unreal-engine-cpp-pro + claude-skills/unreal-* (5), godot-* (13), + media/asset pipeline (2d-pixel-asset, audio-to-midi, midi-synth, seedance) | Game projects, engine work, shaders, physics, multiplayer, game assets |
-| **QA/Review** | `qa-review` | requesting/receiving code review, verification-before-completion, superpowers verification, caveman-review, ponytail-review, caveman-commit, TDD, + ~20 Claude-Cortex review/audit skills (multi-specialist-review, testing-*, doc-*, accessibility, ux-review, security, playwright/webapp-testing) | Review gates, bug hunts, "is it done?" — read-only, never edits |
+| **QA/Review** | `qa-review` | requesting/receiving code review, verification-before-completion, superpowers verification, caveman-review, ponytail-review, caveman-commit, TDD, + ~20 Claude-Cortex review/audit skills (multi-specialist-review, testing-*, doc-*, accessibility, ux-review, security, playwright/webapp-testing), website-compliance-checklist | Review gates, bug hunts, "is it done?" — read-only, never edits |
 | **Ops/Planning** | `ops-planning` | brainstorming, writing-plans, executing-plans, superpowers-* (planning), dispatching-parallel-agents, subagent-driven-development, git-worktrees, finish-branch, writing-skills, caveman-compress, graphify-setup, + ~30 Claude-Cortex planning/PM/doc skills | Kickoff, specs, plans, work splitting, coordination, docs, research |
 
 ## Full skill inventory per crew
@@ -26,7 +26,7 @@ Your project has a **dev team** — 5 crews implemented as subagents. Whenever y
 
 **Products & dashboards:** `dashboard-designer-skill`, `checklist-design`, `chart-builder`
 
-**Image & code-to-visual:** `imagegen-frontend-web`, `imagegen-frontend-mobile`, `image-to-code` (+`-skill`), `gemini-image-gen`, `2d-pixel-asset`, `tech-product-landing`, `seedance` (video/trailers)
+**Image & code-to-visual:** `imagegen-frontend-web`, `imagegen-frontend-mobile`, `image-to-code` (+`-skill`), `gemini-image-gen`, `2d-pixel-asset`, `tech-product-landing`, `seedance` (video/trailers), `threeui-integration` (ThreeUI Community WebGL/Three.js/shader components — the WebGL sibling of the `ui-component-integration` protocol below; owns its own analyze → brief → catalog-select → live-preview → plan → install → integrate → browser-verify loop and must hand the browser verification to `qa-review`)
 
 **Motion & polish:** `web-animation`, `gsap-core`, `emilkowalski-motion`, `impeccable-design-polish`, `redesign-existing-projects`
 
@@ -51,6 +51,8 @@ Your project has a **dev team** — 5 crews implemented as subagents. Whenever y
 **Core gates:** `requesting-code-review`, `receiving-code-review`, `verification-before-completion`, `superpowers-request-review`, `superpowers-receive-review`, `superpowers-verification`, `caveman-review`, `ponytail-review`, `caveman-commit`, `test-driven-development`, `clarity` (prose draft/rewrite/review/lint — Addy Osmani). Owns step 5 of the UI-component protocol (`skills/ui-component-integration.md`): browser verification of any newly integrated component via the `playwright` MCP before marking done.
 
 **Claude-Cortex review/audit (~20):** `codex-code-review`, `multi-specialist-review`, `quality-audit`, `testing-skills-with-subagents`, `test-generation`, `test-review`, `testing-anti-patterns`, `python-testing-patterns`, `accessibility-audit`, `ux-review`, `webapp-testing`, `playwright`, `html-seo-review`, `security-testing-patterns`, `owasp-top-10`, `compliance-audit`, `doc-claim-validator`, `doc-quality-review`, `doc-health-audit`, `wiring-audit`
+
+**Pre-launch legal/compliance gate:** `website-compliance-checklist` — the 20-item audit (privacy, terms, refunds, cookies/consent, dark patterns, hidden fees, fake reviews, unsupported claims, accessibility, business details, unsubscribe, asset licenses, data deletion) in `skills/website-compliance-checklist/CHECKLIST.md`. Run it before delivering or launching any client/public site, and whenever forms, analytics, checkout, email capture or third-party scripts are added. Rules that matter for a read-only crew: it is **not legal advice and carries no guarantee** — report which items pass/fail and which need a lawyer; **never invent** company details, addresses, registration numbers, retention periods or processors (leave `{{PLACEHOLDER}}` and list them as "needs from owner"); **policies must be generated from what the code actually does**, not from a generic template; and **do not add fake trust signals** to make a failing item pass. Cross-links: audit items 13–15 (alt text, contrast, keyboard/`prefers-reduced-motion`) against any `threeui-integration` WebGL background `design-studio` shipped, and audit item 19 (asset licenses) against `phosphor-icons/` and the shadcn/MCP components pulled in via `UI-COMPONENT-MCP.md`.
 
 ### Ops/Planning — `ops-planning`
 **Core workflow:** `brainstorming`, `writing-plans`, `executing-plans`, `superpowers-brainstorming`, `superpowers-executing-plans`, `superpowers-plans`, `superpowers-finish-branch`, `superpowers-git-worktrees`, `superpowers-parallel`, `superpowers-subagent`, `superpowers-skills`, `using-superpowers`, `subagent-driven-development`, `dispatching-parallel-agents`, `writing-plans`, `writing-skills`, `caveman-compress`, `graphify-setup`
@@ -82,9 +84,13 @@ To staff a crew: create `agent/<crew>.md` (mirror the 5 existing agent files), t
      UI/visual direction   → design-studio
      game/engine work      → game-dev
      completion claims     → qa-review (final gate)
+     public/client site    → qa-review runs `website-compliance-checklist` before delivery
 6. DISPATCH    → Task tool, parallel when chunks are independent
 7. VERIFY      → lint/typecheck/build/tests with real output
 8. GATE        → qa-review approves or requests changes
+8b. COMPLY     → for any public or client-facing site, qa-review runs
+                `website-compliance-checklist` and reports pass/fail/needs-a-lawyer.
+                An item is only passed when it was observed working, not merely coded.
 9. FINISH      → merge / PR / cleanup decision
 ```
 

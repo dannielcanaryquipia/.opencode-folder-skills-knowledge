@@ -25,6 +25,7 @@ Read the brief, infer the design direction, and ship interfaces with real design
 - `gsap-core` / `emilkowalski-motion` — tasteful motion (after the interface exists)
 - `impeccable-design-polish` — final audit/polish/harden pass
 - `ui-component-integration` — protocol for discovering/fetching/adapting open-source UI components via MCP (read before any "add a hero / pricing table / nav" task)
+- `threeui-integration` — ThreeUI Community WebGL/Three.js/shader components (animated backgrounds, hero sections, buttons, text effects) into an existing web project. Load before hand-rolling a shader background or 3D hero.
 
 ## UI component workflow (see skills/ui-component-integration.md)
 Follow the protocol when a task calls for new UI — search before you build:
@@ -44,3 +45,5 @@ Follow the protocol when a task calls for new UI — search before you build:
 - Never use default fonts/colors/shadows as a crutch
 - Respect prefers-reduced-motion and accessibility baseline
 - If working on an existing project, audit first, then change — don't blind-replace
+- For `threeui-integration`: never promise "drop your model in and it works" — ThreeUI has **no GLB/GLTF loader or model slot**. State what is tunable, what needs source adaptation, and what is impossible without redesign. Also give text over a WebGL background a static fallback and keep contrast readable; `qa-review` audits this as compliance items 13–15
+- `phosphor-icons/` in the workspace root is a local 1,512-icon set (6 weights, `currentColor` stroke) — use it for free, and it clears the asset-license audit item

@@ -2170,8 +2170,8 @@
     "semantic_hash": "cf77291035fa0491fe8c84ffe188370a"
   },
   "TEAM-GUIDE.md": {
-    "mtime": 1788532788.2577136,
-    "ast_hash": "96be25edea74b9488eb355f918bea9ae",
+    "mtime": 1790947556.0229201,
+    "ast_hash": "97aea13eee4bc3461d58e63cfb77cf08",
     "semantic_hash": ""
   },
   "skills/expo-skills/.claude/skills/expo-skill-eval/SKILL.md": {
@@ -3035,8 +3035,8 @@
     "semantic_hash": "e60f43319e2f66fd092acb99f6afc6b7"
   },
   "agent/design-studio.md": {
-    "mtime": 1788404822.716362,
-    "ast_hash": "6bc88f5a460b05796797e3e6774b99db",
+    "mtime": 1790947603.8964221,
+    "ast_hash": "d14fcde48647b6fb75f56b2fbed41e36",
     "semantic_hash": ""
   },
   "agent/dev-build.md": {
@@ -3055,8 +3055,8 @@
     "semantic_hash": ""
   },
   "agent/qa-review.md": {
-    "mtime": 1788404179.4785209,
-    "ast_hash": "f27950ba08cf37b856c32a66bf07625e",
+    "mtime": 1790947628.281861,
+    "ast_hash": "e0fb01d1009655c6e896df53fa4ab771",
     "semantic_hash": ""
   },
   "graphify-out/memory/query_20260805_090532_for_what_is_this_run.md": {
@@ -12150,8 +12150,8 @@
     "semantic_hash": ""
   },
   "SKILLS-GUIDE.md": {
-    "mtime": 1788580616.347863,
-    "ast_hash": "3a5781df78a33c7d631006a4cbdf286b",
+    "mtime": 1790947793.339411,
+    "ast_hash": "8482249108bd3ddf8898bdb9e113ac9d",
     "semantic_hash": ""
   },
   "WEB-ANIMATION.md": {
@@ -12335,13 +12335,13 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1789303728.9840841,
-    "ast_hash": "278cb4fa62cb41a43effcbe2eac4d621",
+    "mtime": 1790947745.8222394,
+    "ast_hash": "20814a74d8b97fcabdae293e97a67033",
     "semantic_hash": ""
   },
   "skills-upload/INDEX.md": {
-    "mtime": 1790395365.8394473,
-    "ast_hash": "4da70ce34e85c8b37910c4e6071dfbfb",
+    "mtime": 1790948066.5385246,
+    "ast_hash": "85240acf171e33078b2ffd4301cde4dc",
     "semantic_hash": ""
   },
   "skills-upload/bundles/BUNDLES-INDEX.md": {
@@ -148422,6 +148422,281 @@
   "skills-upload/README.txt": {
     "mtime": 1790774960.2445207,
     "ast_hash": "5168e6e8b656f0d7d749d1b532f574f4",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/scripts/build-catalog.mjs": {
+    "mtime": 1790944251.8053324,
+    "ast_hash": "a3cdd8b8ab146de389980b009783d40f",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/scripts/fetch-threeui.sh": {
+    "mtime": 1790944251.820828,
+    "ast_hash": "10dc687df38fa1843d3c7e72612683bd",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/scripts/preview.sh": {
+    "mtime": 1790944251.813375,
+    "ast_hash": "58996ea2d3c4e1a34d423843eb769bd7",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/SKILL.md": {
+    "mtime": 1790944251.7656648,
+    "ast_hash": "91e069fe1f2c779b5bb345bd46fb2f1f",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/references/asset-slots.md": {
+    "mtime": 1790944251.7813413,
+    "ast_hash": "b83cc17ec32174a382ed866478838168",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/references/component-catalog.md": {
+    "mtime": 1790944251.7973218,
+    "ast_hash": "5a3a9d53ca3b06d45cf3f12242015a31",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/references/install-and-runtime.md": {
+    "mtime": 1790944251.7813413,
+    "ast_hash": "02fc804ca96c7da43314f4ed0a86caca",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/templates/asset-manifest.md": {
+    "mtime": 1790944251.8247213,
+    "ast_hash": "64b227919ae886ec7430ca2af3a0a520",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/templates/integration-plan.md": {
+    "mtime": 1790944251.831069,
+    "ast_hash": "64a195c42541d3d1bde68340cd4f3f7c",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/animated-top-dock.md": {
+    "mtime": 1790944251.9710388,
+    "ast_hash": "0be8a77cb6324847156d54ea2e60d46a",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/article-headings.md": {
+    "mtime": 1790944251.9474182,
+    "ast_hash": "579bbddf22262531922d78d0a3a955b2",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/bestsellers-book-showcase.md": {
+    "mtime": 1790944251.939632,
+    "ast_hash": "2dee0a8f07ba33aa7a932a67f2b885e8",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/bookshelf.md": {
+    "mtime": 1790944251.8923533,
+    "ast_hash": "eeccca45d0a78d451c12f656640e4ddf",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/brand-orbs.md": {
+    "mtime": 1790944251.8817887,
+    "ast_hash": "9d24fdb22785947c4076c13805ae6e98",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/character-carousel.md": {
+    "mtime": 1790944251.9553642,
+    "ast_hash": "662d9b9bb1e62a667209c4b9632624fa",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/circle-buttons.md": {
+    "mtime": 1790944251.9099915,
+    "ast_hash": "aac3f1e9a6246715a8779c904853b190",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/complete-shelf-landing-page.md": {
+    "mtime": 1790944251.9198651,
+    "ast_hash": "3994819a72b7a2e16402442de47ca432",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/constellation-field.md": {
+    "mtime": 1790944251.911994,
+    "ast_hash": "d8b028f58ee51301ccf581128e18dac8",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/crt.md": {
+    "mtime": 1790944251.897565,
+    "ast_hash": "6065f02f364f74b9eb1c6e1e06eff1d0",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/diagnostics-panel.md": {
+    "mtime": 1790944251.9257357,
+    "ast_hash": "79f43f2cfd8f31ae52db6737e05956dc",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/elements.md": {
+    "mtime": 1790944251.9553642,
+    "ast_hash": "87bc638ff1cc7dd493ee75b967fe879d",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/energy-orb.md": {
+    "mtime": 1790944251.9710388,
+    "ast_hash": "dfeae7e259f091cdcf25510f97904241",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/engraved-certificate.md": {
+    "mtime": 1790944251.897565,
+    "ast_hash": "39ee2ae7ac293e97747ae39bdca767a7",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/gallery-heading.md": {
+    "mtime": 1790944251.9790907,
+    "ast_hash": "df16c2846a03c5df5522ca49f6d221ee",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/gallery.md": {
+    "mtime": 1790944251.9257357,
+    "ast_hash": "647773c0218bb92fe37573e43da9a675",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/globe-study.md": {
+    "mtime": 1790944251.985359,
+    "ast_hash": "a697e7d23fc21db09ad3bdd54674e228",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/japanese-tower.md": {
+    "mtime": 1790944251.8717706,
+    "ast_hash": "810c6b9daaee61e69f0e8db24774fcd6",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/kage-landing-page.md": {
+    "mtime": 1790944251.9161508,
+    "ast_hash": "8cab664c6d97217600e9c7d37dd945d0",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/koi-studies.md": {
+    "mtime": 1790944251.8923533,
+    "ast_hash": "f44ca5d35c4d6c94cb9c17a528b39ba2",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/landscape.md": {
+    "mtime": 1790944251.8631744,
+    "ast_hash": "ff19677912c3d7d8b0b5352f8e1dd84c",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/liquid-form.md": {
+    "mtime": 1790944251.939632,
+    "ast_hash": "94f84aca3f682f4cc68ef008f12e0eaf",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/liquid-metal-button.md": {
+    "mtime": 1790944251.9514232,
+    "ast_hash": "247f03dad83f4debf0ffd5cfba3fff5d",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/matrix-field.md": {
+    "mtime": 1790944251.8350692,
+    "ast_hash": "d6f92fef4b6d4e0888b2d41f0604352a",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/meng-to-sketchbook-landing-page.md": {
+    "mtime": 1790944251.9553642,
+    "ast_hash": "e539e4531952ec4f626487a5491121f0",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/performance-gauges.md": {
+    "mtime": 1790944251.8350692,
+    "ast_hash": "8a2d72a7a4903c7be52d5be94d744331",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/portal-field.md": {
+    "mtime": 1790944251.8535883,
+    "ast_hash": "4b73c4f59acaa6eb5461a696726d204e",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/predictive-arc.md": {
+    "mtime": 1790944251.8837914,
+    "ast_hash": "23ba9104b89b62fe9a1ac3fa61c16ff4",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/rectangle-buttons.md": {
+    "mtime": 1790944251.8765738,
+    "ast_hash": "523b21ceba2d0164f12134e399c1d67c",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/semantic-bloom.md": {
+    "mtime": 1790944251.9553642,
+    "ast_hash": "49bbcb4e5b40c9ca55d90b8ce3ec2767",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/sketchbook.md": {
+    "mtime": 1790944251.8837914,
+    "ast_hash": "79f0f24a3893e784c5481972afdb39f4",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/skeuomorphic-toggle.md": {
+    "mtime": 1790944251.8495836,
+    "ast_hash": "0916a49b03273936bd056d3514708850",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/spark-badge.md": {
+    "mtime": 1790944251.897565,
+    "ast_hash": "133e5f1d9731a27f8cafa5ea51f0e874",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/star-portal.md": {
+    "mtime": 1790944251.8697684,
+    "ast_hash": "d5b440e1a3a1d8fa9684ae37b5d98013",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/structure-flow.md": {
+    "mtime": 1790944251.8665583,
+    "ast_hash": "90a15ae9f312184a4d05d21138823e48",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/sylva-hero.md": {
+    "mtime": 1790944251.9257357,
+    "ast_hash": "b6736ff74845830972969f472c196696",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/sylva-living-world.md": {
+    "mtime": 1790944251.9680333,
+    "ast_hash": "3af2855092f9fbfe76eae38604df4cc4",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/temple-night.md": {
+    "mtime": 1790944251.8555906,
+    "ast_hash": "1b7fa39d56b5ce74996ba66d24faf018",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/typography-vortex.md": {
+    "mtime": 1790944251.8608508,
+    "ast_hash": "e158ba617a51d4a17bf823f1d20bbb19",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/uplink-loader.md": {
+    "mtime": 1790944251.9237328,
+    "ast_hash": "1203ad7fc559542e60d60c1e02bc201e",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/warp-field.md": {
+    "mtime": 1790944251.9257357,
+    "ast_hash": "16f0640e5b2ddcf7a2f40037d3afd155",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/wireframe-forms.md": {
+    "mtime": 1790944251.9710388,
+    "ast_hash": "914b220c834a78b158ee89fe0b01548f",
+    "semantic_hash": ""
+  },
+  "skills/threeui-integration/upstream-skills/woven-cloth.md": {
+    "mtime": 1790944251.844899,
+    "ast_hash": "0493ed0cd377d48cb5c465a8292960d3",
+    "semantic_hash": ""
+  },
+  "skills/website-compliance-checklist/CHECKLIST.md": {
+    "mtime": 1790945442.0,
+    "ast_hash": "9171c7e93ee0d425e075999782eabccd",
+    "semantic_hash": ""
+  },
+  "skills/website-compliance-checklist/SKILL.md": {
+    "mtime": 1790945442.0,
+    "ast_hash": "6e8ef5852534d8609b3e67a5f9370ae7",
+    "semantic_hash": ""
+  },
+  "skills/website-compliance-checklist/templates/audit-report.md": {
+    "mtime": 1790945442.0,
+    "ast_hash": "de930a1dbbd379d137fb813814e90c07",
     "semantic_hash": ""
   }
 }

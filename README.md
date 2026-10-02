@@ -1,6 +1,6 @@
 # .opencode — Personal Agent Workspace
 
-A self-contained agent-development workspace: 110+ skill collections, a 5-crew dev
+A self-contained agent-development workspace: 112 skill collections, a 5-crew dev
 team, website/motion design system, manifest-first site templates, and a live
 graphify knowledge graph covering the **entire directory**.
 
@@ -8,7 +8,7 @@ graphify knowledge graph covering the **entire directory**.
 
 This is the home directory for your AI tooling setup. It combines:
 
-- **Skills** (`skills/`) — 110 top-level collections (261+ skills total) spanning
+- **Skills** (`skills/`) — 112 top-level collections (353 skills total) spanning
   coding, design, game development, UI/UX, media, and productivity.
 - **Dev team agents** (`agent/`) — 5 crews implemented as opencode subagents with
   a defined work-splitting protocol.
@@ -26,6 +26,8 @@ This is the home directory for your AI tooling setup. It combines:
 |---|---|
 | `agent/` | Dev-team subagent definitions (5 crews). See `TEAM-GUIDE.md`. |
 | `skills/` | Skill collections — see "Skills" below. |
+| `skills-upload/` | Shareable per-skill zips + `INDEX.md` catalog + `normalize_skills.py` fixer. Source for re-installing a single skill. |
+| `phosphor-icons/` | Local Phosphor icon set (MIT): 1,512 icons × 6 weights as SVG, flat SVG and PNG, plus web fonts. No code — drop into `public/` and color via `currentColor`. |
 | `templates/` | Site-requirements scaffold (`site.config.ts`, `ASSET-MANIFEST.md`, `MOTION-SPEC.md`, `PLAN.md`). |
 | `graphify-out/` | Knowledge graph: `graph.json`, `graph.html`, `GRAPH_REPORT.md`, `PROJECT-MAP.md`, community labels, caches. |
 | `.claude/` | Claude Code settings (`settings.json`). |
@@ -48,6 +50,7 @@ This is the home directory for your AI tooling setup. It combines:
 | `WEB-ANIMATION.md` | The `web-animation` skill — what it covers and how to use it. |
 | `OPEN-SOURCE-TEMPLATES.md` | Curated open-source Apple-style interactive sites (Three.js + GSAP) to clone/remix. |
 | `UI-COMPONENT-MCP.md` | On-demand MCP servers (playwright, etc.) for pulling in and browser-testing UI components. |
+| `skills/website-compliance-checklist/CHECKLIST.md` | The 20-item pre-launch legal/compliance checklist (privacy, cookies/consent, dark patterns, accessibility, licenses, …). Not legal advice. |
 
 ## Dev team agents (`agent/`)
 
@@ -61,7 +64,7 @@ This is the home directory for your AI tooling setup. It combines:
 
 ## Skills (`skills/`)
 
-110 top-level collections. Main clusters:
+112 top-level collections. Main clusters:
 
 - **Coding & engineering** — `Claude-Cortex` (patterns, security, infra, perf,
   docs, review), superpowers-* (planning, TDD, verification), ponytail-*,
@@ -70,7 +73,8 @@ This is the home directory for your AI tooling setup. It combines:
   ui-ux-pro-max, ui-ux-design-pro, high-end-visual-design, brand/brandkit,
   banner-design, image-to-code, imagegen-* (web + mobile), gpt-taste, minimalist-ui,
   brutalist-ui, industrial-brutalist-ui, radix-ui, web-animation, gsap-core,
-  emilkowalski-motion, impeccable-design-polish, ui-styling, slides, dashboard-designer.
+  emilkowalski-motion, impeccable-design-polish, ui-styling, slides, dashboard-designer,
+  **threeui-integration** (ThreeUI Community WebGL/Three.js/shader components).
 - **Game development** — game-development-* (orchestrator + 10 platform skills),
   unity-* (develop, ecs-patterns, ai-game-creator), unreal-engine-cpp-pro,
   godot-* (13 skills), game-art/audio/design.
@@ -78,6 +82,9 @@ This is the home directory for your AI tooling setup. It combines:
   and more), expo-overview.
 - **Media & audio** — audio-to-midi, midi-synth, seedance, 2d-pixel-asset,
   gemini-image-gen, google-ai-studio-tts, video-download / video-summarizer.
+- **Review & compliance** — multi-specialist-review, codex-code-review, test-review,
+  accessibility-audit, compliance-audit, html-seo-review, playwright / webapp-testing,
+  **website-compliance-checklist** (20-item pre-launch legal + accessibility audit).
 - **Agent/productivity** — i-have-adhd, clarity, skill-creator, writing-*,
   grilling, grilling-with-docs, graphify-setup, opencode, research, backlog-md.
 
@@ -93,13 +100,19 @@ Requirements-driven build contract for client/interactive sites:
 
 ## Knowledge graph (`graphify-out/`)
 
-Current graph of the entire directory (just refreshed):
+Snapshot of the entire directory as of **2026-10-02**:
 
-- **30,676 nodes · 37,623 edges · 2,313 communities** (98% extracted, 2% inferred)
-- `graph.json` — the graph itself; `graph.html` — interactive aggregated view.
+- **31,216 nodes · 38,103 edges · 2,366 communities**
+- `graph.json` — the graph itself; `graph.html` — interactive aggregated view
+  (community-level; pass `--obsidian` for full node-level detail).
 - `GRAPH_REPORT.md` — broad architecture review; `PROJECT-MAP.md` — token-cheap
   orientation.
 - `wiki/index.md` (when present) — navigation for broad sweeps.
+- `manifest.json` — per-file extraction manifest.
+
+> These counts move every time the graph rebuilds. Treat them as a dated snapshot,
+> not a target — and expect the exact numbers to differ after your own
+> `graphify update .`.
 
 Usage:
 
@@ -122,6 +135,12 @@ graphify update .         # re-extract code / keep graph current (AST-only, free
 - After modifying code, run `graphify update .` to keep the graph current.
 - Keep new docs linked from this README and `SKILLS-GUIDE.md` where relevant.
 - Wire any new agent crew updates into `TEAM-GUIDE.md`.
+- New skill = `skills/<name>/SKILL.md` with `name` + `description` frontmatter, plus
+  a shareable `skills-upload/<name>.zip` and an `INDEX.md` row. If `graphify update`
+  warns that community labels drifted (hub renames), run `graphify label` to refresh
+  names with the LLM.
+- Any public or client-facing site ships only after `qa-review` clears the
+  `website-compliance-checklist` gate (protocol step 8b in `TEAM-GUIDE.md`).
 
 ## Git
 
